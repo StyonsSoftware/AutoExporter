@@ -1,0 +1,46 @@
+Exports run as a business process.
+They drop their output into a table which is created dynamically when the export finishes.
+All business processes are accessible via a common handler, BusinessProcessInvoke.ashx.
+That handler needs three arguments to kick off a business process:
+     DatabaseName
+     BusinessProcessID
+     and
+     ParameterSetID
+If you want to call a business process programmatically, you need to do an http POST to that handler.
+The export business process specifically has a guid of 64faa344-9c75-4c98-afe3-a40ec2df9249.
+
+After you POST to that URL, the business process is running asynchronously.
+If you want to know when it finished, you will have to poll a separate endpoint to get feedback on the current status.
+This is provided OOB by a View form.  It's the same view form you see when you are waiting for an export to complete.
+
+The .NET class for that endpoint lives here:
+     Blackbaud.AppFx.Platform.Catalog.WebApiClient.ViewForms.BusinessProcessParameterSet.BusinessProcessParameterSetRecentStatusViewForm
+
+Once that form tells you that the process has finished, you can count on an output table existing somewhere with the results.
+This query will tell you the exact table name of the output (it will be a cryptic looking table with a guid as part of the name)
+The @BUSINESSPROCESSPARAMETERSETID value will correspond to the value you POSTED as an argument when you kicked off the process.
+
+  SELECT TOP 1
+    BPC.ID
+   ,BPC.NAME
+   ,BPS.STATUS
+   ,BPO.TABLENAME
+   ,BPS.BUSINESSPROCESSPARAMETERSETID
+  FROM
+    BUSINESSPROCESSSTATUS BPS
+    INNER JOIN BUSINESSPROCESSCATALOG BPC ON BPC.ID = BPS.BUSINESSPROCESSCATALOGID
+    INNER JOIN BUSINESSPROCESSOUTPUT BPO ON BPO.BUSINESSPROCESSSTATUSID = BPS.ID
+  WHERE BPC.NAME = 'EXPORT PROCESS'
+    AND ((@BUSINESSPROCESSPARAMETERSETID is null) or (BPS.BUSINESSPROCESSPARAMETERSETID = @BUSINESSPROCESSPARAMETERSETID))
+    AND ((@MINIMUMDATE IS NULL) or (BPO.DATEADDED > @MINIMUMDATE))
+    AND BPS.STATUS = 'Completed'
+  ORDER BY
+    BPO.DATEADDED DESC
+
+Once you have the table name, you can just SELECT it all, and drop it to a CSV or wherever you want.
+
+All of the logic described here is contained in this project - specifically these two files:
+     \AutoExporter\CRMExport.vb
+     and
+     \AutoExporter.Catalog\Datalists\ExportOutputSets.Datalist.xml
+The MetalWeb project encapsulates the datalist as a .NET class, so that you can call it from code easily.

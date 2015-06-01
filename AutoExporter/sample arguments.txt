@@ -1,0 +1,13 @@
+﻿For my local machine:
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+/url="http://localhost/bbappfx_293/appfxwebservice.asmx" /db=BBInfinity /outputfolder="c:\dev\proj\exports" /simultaneous=3 /statfile="c:\dev\proj\exports\stats.csv" /sqlinstancename=localhost\SQL2008 /sqldbname=293 /debug
+/url="http://localhost/bbappfx_400/appfxwebservice.asmx" /db=BBInfinity /outputfolder="c:\dev\proj\exports" /simultaneous=3 /statfile="c:\dev\proj\exports\stats.csv" /sqlinstancename=localhost\SQL2014 /sqldbname=400
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+For the DEV server:
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+c:
+cd \
+cd "Users\styonsjr\Desktop\exporter"
+runas /netonly /user:BLACKBAUDHOST\styonsjr "exporter.exe -debug -url=https://bbisrig05stg.blackbaudhosting.com/29971D_01914fa7-fac4-4881-822b-d0c4278bff8f/appfxwebservice.asmx -db=29971D -outputfolder=c:\users\styonsjr\desktop\exporter\results -simultaneous=1 -statfile=C:\Users\styonsjr\Desktop\exporter\results\stats.csv -sqlinstancename=D2PBBSQL033C\C -sqldbname=29971D_02a1edf6-294a-4105-9df8-d6892e851f18 -crmusername=BLACKBAUDHOST\styonsjr -crmpassword=MyPassword
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

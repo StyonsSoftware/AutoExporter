@@ -1,0 +1,13 @@
+<PackageSpec
+  xmlns="bb_appfx_package"
+  xmlns:c="bb_appfx_commontypes"
+  ID="1879c3a7-70b0-4eaf-b7e7-a585f6696fd4"
+  Name="AutoExporter Utility Package"
+  Description="Supports the auto-export utility"
+  Author="Wake Forest University"
+  >
+  <c:DependencyList>
+    <c:Dependency CatalogAssembly="ExportDefinition.Catalog.dll" CatalogItem="ExportDefinition.Catalog.ExportDefinitionMetaData.Datalist.xml" />
+    <c:Dependency CatalogAssembly="ExportDefinition.Catalog.dll" CatalogItem="ExportDefinition.Catalog.ExportOutputSets.Datalist.xml" />
+  </c:DependencyList>
+</PackageSpec>

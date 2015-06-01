@@ -1,0 +1,60 @@
+﻿<DataListSpec
+	xmlns="bb_appfx_datalist"
+	xmlns:c="bb_appfx_commontypes"
+	ID="36b8d1c7-0767-4e6e-a318-9f33b42622e2"
+	Name="Export Output Sets Data List"
+	Description="Provides data needed to download the output of an Export Process"
+	Author="Wake Forest University"
+  c:SecurityUIFolder="AutoExporter"
+  >
+  <SPDataList SPName="USR_USP_DATALIST_EXPORTOUTPUTSETS">
+    <c:CreateProcedureSQL>
+      <![CDATA[
+create procedure dbo.USR_USP_DATALIST_EXPORTOUTPUTSETS
+(
+  @BUSINESSPROCESSPARAMETERSETID uniqueidentifier
+ ,@MINIMUMDATE datetime
+)
+as
+begin
+  set nocount on;
+  SELECT TOP 1
+    BPC.ID
+   ,BPC.NAME
+   ,BPS.STATUS
+   ,BPO.TABLENAME
+   ,BPS.BUSINESSPROCESSPARAMETERSETID
+  FROM
+    BUSINESSPROCESSSTATUS BPS
+    INNER JOIN BUSINESSPROCESSCATALOG BPC ON BPC.ID = BPS.BUSINESSPROCESSCATALOGID
+    INNER JOIN BUSINESSPROCESSOUTPUT BPO ON BPO.BUSINESSPROCESSSTATUSID = BPS.ID
+  WHERE BPC.NAME = 'EXPORT PROCESS'
+    AND ((@BUSINESSPROCESSPARAMETERSETID is null) or (BPS.BUSINESSPROCESSPARAMETERSETID = @BUSINESSPROCESSPARAMETERSETID))
+    AND ((@MINIMUMDATE IS NULL) or (BPO.DATEADDED > @MINIMUMDATE))
+    AND BPS.STATUS = 'Completed'
+  ORDER BY
+    BPO.DATEADDED DESC
+end;
+]]>
+    </c:CreateProcedureSQL>
+  </SPDataList>
+
+  <Parameters>
+    <c:FormMetaData>
+      <c:FormFields>
+        <c:FormField FieldID="BUSINESSPROCESSPARAMETERSETID" Caption="BUSINESSPROCESSPARAMETERSETID" DataType="Guid"/>
+        <c:FormField FieldID="MINIMUMDATE" Caption="MINIMUMDATE" DataType="Date"/>
+      </c:FormFields>
+    </c:FormMetaData>
+  </Parameters>
+
+  <Output>
+    <OutputFields>
+      <OutputField FieldID="ID" Caption="ID" DataType="Guid" IsHidden="true" />
+      <OutputField FieldID="NAME" Caption="NAME" DataType="String" />
+      <OutputField FieldID="STATUS" Caption="STATUS" DataType="String" />
+      <OutputField FieldID="TABLENAME" Caption="TABLENAME" DataType="String" />
+      <OutputField FieldID="BUSINESSPROCESSPARAMETERSETID" Caption="BUSINESSPROCESSPARAMETERSETID" DataType="Guid" />
+    </OutputFields>
+  </Output>
+</DataListSpec>

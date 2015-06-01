@@ -1,0 +1,2 @@
+::This file is intended to be used as a batch file.
+c:\autoexporter.exe /url="http://localhost/bbappfx_293/appfxwebservice.asmx" /db=BBInfinity /outputfolder="c:\dev\proj\exports" /statfile="c:\dev\proj\exports\stats.csv" /sqlinstancename=localhost\SQL2008 /sqldbname=293 /debug /timeout=10 /crmusername=bobsmith /crmpassword=SomePassword

@@ -1,0 +1,42 @@
+AutoExporter is a command line utility.
+To run it, open a command line window and navigate to the folder in which the EXE resides.
+Run it with a /? flag to get help on the various parameters that the application requires to run.
+
+That help is pasted here, for reference.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Exporter
+A utility to automate the download of exports from a Blackbaud CRM instance
+
+Usage:
+exporter.exe /url=<url> /db=<db name> /outputfolder=<folder location> /statfile=
+"<stat file name>" /sqlinstancename=<sql server>\<sql instance> /sqldbname=<sql
+database name>
+
+Example:
+exporter.exe /url="http://localhost/bbappfx_400/appfxwebservice.asmx" /db=BBInfi
+nity /outputfolder="c:\output\exports" /statfile="c:\output\stats.csv" /sqlinsta
+ncename=localhost\SQL2014 /sqldbname=MyDatabase
+
+Parameter details:
+/url              The appfxwebservice.asmx for the Blackbaud instance you wish
+                  to export from.
+/db               The friendly name of the Blackbaud database (often BBInfinity)
+
+/outputfolder     The folder into which all export output will be placed
+                  (output is CSV)
+/statfile         The file that will contain statistics about all completed
+                  exports (output is CSV)
+/sqlinstancename  The SQL instance behind Blackbaud CRM
+/sqldbname        The SQL database name behind Blackbaud CRM
+/timeout          Seconds to wait for an export to complete before moving on
+/debug            When specified, produces much more verbose output,
+                  including error messages and ongoing status updates
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+The "url" parameter can be found by following these steps:
+1 - Navigate to the landing page of CRM
+2 - Click on the "Endpoints" link
+3 - Click on the link called "Blackbaud AppFx Web Service" (it should be the very first one)
+
+The "db" parameter can be found in the web.config file of your CRM instance, or, if you are
+using webshell, by looking at the "databasename=XXX" value in the URL of a CRM page.
