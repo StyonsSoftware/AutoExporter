@@ -1,0 +1,10 @@
+To deploy autoexporter, do the following:
+1 - Build all three projects within the solution
+2 - Deploy these two files:
+    AutoExporter.Catalog.dll 
+    and
+    AutoExporter.MetalWeb.dll
+    to the bbappffx\vroot\bin\custom folder of your BBCRM instance
+3 - Log into CRM and load the package called "AutoExporter Utility Package"
+
+That's it!  You should now be ready to execute the command line utility.

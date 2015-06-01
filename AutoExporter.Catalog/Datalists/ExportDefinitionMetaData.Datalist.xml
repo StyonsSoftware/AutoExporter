@@ -1,0 +1,54 @@
+﻿<DataListSpec
+  xmlns="bb_appfx_datalist"
+  xmlns:c="bb_appfx_commontypes"
+  ID="4eff22cb-712b-475c-ad89-746c2d84e75f"
+  Name="ExportDefinitionMetaData Data List"
+  Description="Given an export definition id, returns metadata about that export definition"
+  Author="Wake Forest University"
+  c:SecurityUIFolder="AutoExporter"
+  >
+
+  <SPDataList SPName="USR_USP_DATALIST_EXPORTDEFMETADATA">
+    <c:CreateProcedureSQL>
+      <![CDATA[
+create procedure dbo.USR_USP_DATALIST_EXPORTDEFMETADATA
+(
+  @EXPORTDEFINITIONID uniqueidentifier
+ )
+as
+begin
+  --declare @exportdefinitionid uniqueidentifier = '740FE11A-37F8-4EA7-8583-2EBDFCA3D58C';
+  declare @xml xml = null;
+  select @xml = exportdefinitionxml from EXPORTDEFINITION where id = @exportdefinitionid;
+  
+  select
+    T.c.value('@ViewPath[1]','nvarchar(max)') as VIEWPATH
+   ,T.c.value('@DisplayPath[1]','nvarchar(max)') as DISPLAYPATH
+   ,T.c.value('@QueryViewID[1]','uniqueidentifier') as QUERYVIEWID
+   ,T.c.value('@Cardinality[1]','nvarchar(max)') as CARDINALITY
+   ,T.c.value('@NumberToExport[1]','int') as NUMBERTOEXPORT
+  from
+    @xml.nodes('/ExportDefinitionQueryViewNode/Nodes/n[@ViewPath]') T(c)
+end;
+]]>
+    </c:CreateProcedureSQL>
+  </SPDataList>
+
+	<Parameters>
+		<c:FormMetaData>
+			<c:FormFields>
+				<c:FormField FieldID="EXPORTDEFINITIONID" Caption="Export definition ID" DataType="Guid"/>
+			</c:FormFields>
+		</c:FormMetaData>
+	</Parameters>
+
+  <Output>
+    <OutputFields>
+      <OutputField FieldID="VIEWPATH" Caption="VIEWPATH" DataType="String"/>
+      <OutputField FieldID="DISPLAYPATH" Caption="DISPLAYPATH" DataType="String"/>
+      <OutputField FieldID="QUERYVIEWID" Caption="QUERYVIEWID" DataType="Guid"/>
+      <OutputField FieldID="CARDINALITY" Caption="CARDINALITY" DataType="String"/>
+      <OutputField FieldID="NUMBERTOEXPORT" Caption="NUMBERTOEXPORT" DataType="Integer"/>
+    </OutputFields>
+  </Output>
+</DataListSpec>

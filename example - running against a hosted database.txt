@@ -1,0 +1,93 @@
+::this is an example of a batch file which runs the utility against a hosted environment.
+::you will need to change the urls, usernames, and passwords of course.
+::you will need read-access to the sql server
+::this batch file was run in an environment where this folder structure existed:
+::C:\AUTOEXPORTER
+::|   runexport.bat
+::|
+::+---app
+::|       AntiXssLibrary.dll
+::|       Blackbaud.AppFx.CustomBasicAuthentication.dll
+::|       Blackbaud.AppFx.dll
+::|       Blackbaud.AppFx.EmailServices.ServiceProxy.dll
+::|       Blackbaud.AppFx.Fuzzy.dll
+::|       Blackbaud.AppFx.HtmlProcessor.dll
+::|       Blackbaud.AppFx.PaymentProcessing.ServiceProxy.dll
+::|       Blackbaud.AppFx.Platform.Automation.dll
+::|       Blackbaud.AppFx.Platform.Automation.xml
+::|       Blackbaud.AppFx.Platform.Catalog.WebApiClient.dll
+::|       Blackbaud.AppFx.Platform.Catalog.WebApiClient.xml
+::|       Blackbaud.AppFx.ProductFlags.ServiceProxy.dll
+::|       Blackbaud.AppFx.Products.dll
+::|       Blackbaud.AppFx.Reports.ServiceProxy.dll
+::|       Blackbaud.AppFx.Server.dll
+::|       Blackbaud.AppFx.Server.xml
+::|       Blackbaud.AppFx.ShellExpressionModel.dll
+::|       Blackbaud.AppFx.ShellExpressionModel.xml
+::|       Blackbaud.AppFx.SpecHelpers.dll
+::|       Blackbaud.AppFx.SpWrap.dll
+::|       Blackbaud.AppFx.WebAPI.dll
+::|       Blackbaud.AppFx.WebAPI.xml
+::|       Blackbaud.AppFx.WebAPI.XmlSerializers.dll
+::|       Blackbaud.AppFx.WebDiagnostics.dll
+::|       Blackbaud.AppFx.xml
+::|       Blackbaud.AppFx.XmlTypes.dll
+::|       Blackbaud.AppFx.XmlTypes.xml
+::|       Blackbaud.AppFx.XmlTypes.XmlSerializers.dll
+::|       ExportDefinition.MetalWeb.dll
+::|       ExportDefinition.MetalWeb.pdb
+::|       Exporter.exe
+::|       Exporter.exe.config
+::|       Exporter.pdb
+::|       Exporter.vshost.exe
+::|       Exporter.vshost.exe.config
+::|       Exporter.vshost.exe.manifest
+::|       Exporter.xml
+::|       HtmlAgilityPack.dll
+::|
+::\---results
+::        stats.csv
+
+cd "c:\autoexporter\results"
+
+::out with the old
+del *.csv
+cd ..
+cd app
+
+echo off
+cls
+ECHO Choose an environment;
+ECHO 1.... DEV
+ECHO 2.... Training
+
+CHOICE /C:12 /N 
+IF ERRORLEVEL 2 GOTO :TRAIN
+IF ERRORLEVEL 1 GOTO :DEV
+GOTO :END
+
+:TRAIN
+set URL=https://somehostedserver/somehostedinstance/appfxwebservice.asmx
+set DB=SOMEHOSTEDDB
+set SQLSVR=192.168.111.1,0000
+set SQLDB=HostedSQLDatabaseName
+goto :execute
+
+:DEV
+set URL=https://someOtherHostedserver/someOtherHostedinstance/appfxwebservice.asmx
+set DB=SOMEHOSTEDDB
+set SQLSVR=192.168.222.1,0000
+set SQLDB=AnotherHostedSQLDatabaseName
+goto :execute
+
+:execute
+::crmusername and crmpassword will be whatever you would have typed when logging into crm as a user.
+::the user must have rights to execute the custom datalist, which was loaded as part of the Catalog project
+SET /P WINDOWSNAME=Windows username (including domain):
+SET /P CRMUSERNAME=CRM username:
+SET /P CRMPASSWORD=CRM Password:
+
+runas /netonly /user:%WINDOWSNAME% "autoexporter.exe -url=%url% -db=%db% -outputfolder=c:\exporter_reports\results -simultaneous=1 -statfile=C:\exporter_reports\results\stats.csv -sqlinstancename=%sqlsvr% -sqldbname=%sqldb% -crmusername=%CRMUSERNAME% -crmpassword=%CRMPASSWORD% -debug -timeout=3600
+
+:end
+pause
