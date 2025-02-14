@@ -41,6 +41,10 @@ Module Main
                                 If Not Integer.TryParse(components(1), _params.TimeoutSeconds) Then
                                     _params.TimeoutSeconds = -1
                                 End If
+                            Case "-EXPORTNAME"
+                                _params.ExportName = components(1)
+                            Case "-IGNORECOLUMNS"
+                                _params.IgnoredColumns = components(1)
                         End Select
                     ElseIf 1 = components.Count Then
                         Select Case components(0)
@@ -66,6 +70,8 @@ Module Main
         Console.WriteLine("TIMEOUT=" + params.TimeoutSeconds.ToString())
         Console.WriteLine("CRMUSERNAME=" + params.CRMUserName)
         Console.WriteLine("CRMPASSWORD=**********") ' + params.CRMPassword)
+        Console.WriteLine("EXPORTNAME=" + params.ExportName)
+        Console.WriteLine("IGNORECOLUMNS=" + params.IgnoredColumns)
     End Sub
 
     Private Sub ShowHelp()
@@ -92,8 +98,13 @@ Module Main
         Console.WriteLine("/timeout          Seconds to wait for an export to complete before moving on")
         Console.WriteLine("/debug            When specified, produces much more verbose output,")
         Console.WriteLine("                  including error messages and ongoing status updates")
+        Console.WriteLine("/exportname       The name of the CRM export to retrieve.")
+        Console.WriteLine("                  If not specified, then ALL exports will be downloaded.")
+        Console.WriteLine("/ignoredcolumns   A comma-delimited list of columns to exclude from the output.")
+        Console.WriteLine("                  Column indexes are zero-based.")
+        Console.WriteLine("                  If not specified, then all columns will be included.")
+        Console.WriteLine("                  Example: /ignoredcolumns=""1,2,3""")
 
-        Console.WriteLine("")
     End Sub
 
     Private Function ArgsValid(ByRef msg As String) As Boolean
@@ -129,7 +140,7 @@ Module Main
                     ParamsToUI(_params)
                 End If
                 Dim paramsFromUser As Parameters = UIToParams()
-                Dim exports As List(Of CRMExport) = GetExportsFromCRM()
+                Dim exports As List(Of CRMExport) = GetExportsFromCRM(paramsFromUser.ExportName)
                 Dim wroteHeader As Boolean = False
                 For Each export In exports
                     If Not wroteHeader Then
@@ -138,7 +149,7 @@ Module Main
                     End If
                     Console.WriteLine("Working on export '" + export.Name + "'")
                     export.Status.Name = export.Name
-                    export.DropToFolder(paramsFromUser.OutputFolder)
+                    export.DropToFolder()
                     export.RefreshExportStatus()
                     AddToFile(_params.StatsOutputFileName, export.Status.CSVEntry)
                     Util.Log("Complete with " + export.Status.CRMStatus.TOTALNUMBERPROCESSED.ToString() + " records processed", False, _params)
@@ -155,14 +166,16 @@ Module Main
         Console.Read()
     End Sub
 
-    Private Function GetExportsFromCRM() As List(Of CRMExport)
+    Private Function GetExportsFromCRM(Optional ExportName As String = "") As List(Of CRMExport)
         Dim result As New List(Of CRMExport)
         Dim filter As New Blackbaud.AppFx.Platform.Catalog.WebApiClient.DataLists.TopLevel.ExportProcessListFilterData()
         For Each export In Blackbaud.AppFx.Platform.Catalog.WebApiClient.DataLists.TopLevel.ExportProcessList.GetRows(Util.GetProvider(_params.AppfxWebServiceURL, _params.DBName, _params.CRMUserName, _params.CRMPassword), filter)
-            Dim ex As New CRMExport(_params)
-            ex.ExportID = export.ID
-            ex.Name = export.Name
-            result.Add(ex)
+            If String.IsNullOrEmpty(ExportName) OrElse export.Name = ExportName Then
+                Dim ex As New CRMExport(_params)
+                ex.ExportID = export.ID
+                ex.Name = export.Name
+                result.Add(ex)
+            End If
         Next
         Return result
     End Function

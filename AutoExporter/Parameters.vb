@@ -10,4 +10,6 @@
     Public CRMUserName As String
     Public CRMPassword As String
     Public TimeoutSeconds As Integer 'wait for this many seconds before giving up on an export.
+    Public ExportName As String
+    Public IgnoredColumns As String 'comma-delimited list of integers, as in "1,2,3"
 End Class

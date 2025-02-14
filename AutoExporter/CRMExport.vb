@@ -12,12 +12,32 @@ Public Class CRMExport
     Public Name As String
     Public Status As ExportStatus
     Public OutputFileName As String
+    Public IgnoredColumns As List(Of Integer)
 
     Public Sub New(parms As Parameters)
         _params = parms
         _provider = Util.GetProvider(_params.AppfxWebServiceURL, _params.DBName, _params.CRMUserName, _params.CRMPassword)
         Status = New ExportStatus(String.Empty, Nothing)
+        IgnoredColumns = IntegerCSVToIntegerList(_params.IgnoredColumns)
     End Sub
+
+    Private Function IntegerCSVToIntegerList(s As String) As List(Of Integer)
+        'turn "1,2,3" into a list(of integer) with 1/2/3.
+        'Ignore invalid integers.
+        'Always return at least the empty list.
+        Dim result As New List(Of Integer)
+        If String.IsNullOrEmpty(s) Then
+            Return result
+        End If
+        Dim integerCandidates As List(Of String) = s.Split(",").ToList()
+        Dim intCan As Integer
+        For Each integerCandidate As String In integerCandidates
+            If Integer.TryParse(integerCandidate, intCan) Then
+                result.Add(intCan)
+            End If
+        Next
+        Return result
+    End Function
 
     Public Sub New()
         If _provider Is Nothing Then
@@ -25,7 +45,7 @@ Public Class CRMExport
         End If
     End Sub
 
-    Sub DropToFolder(OutputFolder As String)
+    Sub DropToFolder()
         PerformExport(ExportID)
     End Sub
 
@@ -53,8 +73,10 @@ Public Class CRMExport
         Dim exportBusinessProcessid As Guid = New Guid("64faa344-9c75-4c98-afe3-a40ec2df9249")
         Dim serverName As String = _provider.Url.Split("/")(2)
         Dim virDirName As String = _provider.Url.Split("/")(3)
-        KickOffBusinessProcess(serverName, virDirName, _provider.Database, exportBusinessProcessid, exportID)
         Dim startTime As DateTime = DateTime.Now()
+
+        KickOffBusinessProcess(serverName, virDirName, _provider.Database, exportBusinessProcessid, exportID)
+
         RefreshExportStatus()
         While Not Status.CRMStatus.COMPLETED
             RefreshExportStatus()
@@ -67,7 +89,7 @@ Public Class CRMExport
             Thread.Sleep(MS_BETWEEN_STATUS_CHECKS)
         End While
         'ok, now it's complete.  write the output to the folder.
-        DownloadTable(Status.OutputTableName)
+        DownloadTable(Status.OutputTableName, IgnoredColumns)
     End Sub
 
     Private Function KickOffBusinessProcess(server As String, virdir As String, dbName As String, businessProcessID As Guid, parameterSetID As Guid) As String
@@ -103,7 +125,7 @@ Public Class CRMExport
         Return result
     End Function
 
-    Private Sub DownloadTable(outputTableName As String)
+    Private Sub DownloadTable(outputTableName As String, ignoreColumns As List(Of Integer))
         Try
             Dim sqlStatement As String = "SELECT * FROM " + outputTableName
             Util.Log("SQL for output download: " + sqlStatement, True, _params)
@@ -115,7 +137,7 @@ Public Class CRMExport
                 Dim sqladapter As New SqlDataAdapter("SELECT * FROM " + outputTableName, conn)
                 Dim resultTable As New DataTable("EXPORT")
                 sqladapter.Fill(resultTable)
-                Dim csv As String = ExportTableToCsv(resultTable)
+                Dim csv As String = ExportTableToCsv(resultTable, ignoreColumns)
                 OutputFileName = GetFileName()
                 WriteStringToFile(csv, OutputFileName)
                 conn.Close()
@@ -139,15 +161,17 @@ Public Class CRMExport
         fs.Close()
     End Sub
 
-    Private Shared Function ExportTableToCsv(sourceTable As DataTable) As String
+    Private Shared Function ExportTableToCsv(sourceTable As DataTable, excludeColumns As List(Of Integer)) As String
         'turn a datatable into a giant CSV string
         Dim sb As New StringBuilder()
 
         For rowCount As Integer = 0 To sourceTable.Rows.Count - 1
             For colCount As Integer = 0 To sourceTable.Columns.Count - 1
-                sb.Append(sourceTable.Rows(rowCount)(colCount))
-                If colCount <> sourceTable.Columns.Count - 1 Then
-                    sb.Append(",")
+                If Not excludeColumns.Contains(colCount) Then
+                    sb.Append(sourceTable.Rows(rowCount)(colCount))
+                    If colCount <> sourceTable.Columns.Count - 1 Then
+                        sb.Append(",")
+                    End If
                 End If
             Next
             If rowCount <> sourceTable.Rows.Count - 1 Then
