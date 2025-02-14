@@ -4,7 +4,7 @@
 	ID="36b8d1c7-0767-4e6e-a318-9f33b42622e2"
 	Name="Export Output Sets Data List"
 	Description="Provides data needed to download the output of an Export Process"
-	Author="Wake Forest University"
+	Author="Styons Software Consulting"
   c:SecurityUIFolder="AutoExporter"
   >
   <SPDataList SPName="USR_USP_DATALIST_EXPORTOUTPUTSETS">

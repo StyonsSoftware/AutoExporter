@@ -4,7 +4,7 @@
   ID="4eff22cb-712b-475c-ad89-746c2d84e75f"
   Name="ExportDefinitionMetaData Data List"
   Description="Given an export definition id, returns metadata about that export definition"
-  Author="Wake Forest University"
+  Author="Styons Software Consulting"
   c:SecurityUIFolder="AutoExporter"
   >
 
