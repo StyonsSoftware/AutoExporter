@@ -1,5 +1,0 @@
-C:\Users\248822\Source\Repos\AutoExporter\AutoExporter.Catalog\bin\Debug\AutoExporter.Catalog.dll
-C:\Users\248822\Source\Repos\AutoExporter\AutoExporter.Catalog\bin\Debug\AutoExporter.Catalog.pdb
-C:\Users\248822\Source\Repos\AutoExporter\AutoExporter.Catalog\obj\Debug\AutoExporter.Catalog.vbproj.CoreCompileInputs.cache
-C:\Users\248822\Source\Repos\AutoExporter\AutoExporter.Catalog\obj\Debug\AutoExporter.Catalog.dll
-C:\Users\248822\Source\Repos\AutoExporter\AutoExporter.Catalog\obj\Debug\AutoExporter.Catalog.pdb
