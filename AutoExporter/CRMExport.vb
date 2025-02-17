@@ -74,14 +74,14 @@ Public Class CRMExport
         Dim serverName As String = _provider.Url.Split("/")(2)
         Dim virDirName As String = _provider.Url.Split("/")(3)
         Dim startTime As DateTime = DateTime.Now()
-
+        Util.Log("Start time was: " + startTime.ToString("MM/dd/yyyy HH:mm:ss"), False, _params)
         KickOffBusinessProcess(serverName, virDirName, _provider.Database, exportBusinessProcessid, exportID)
 
         RefreshExportStatus()
         While Not Status.CRMStatus.COMPLETED
             RefreshExportStatus()
             Dim numberOfSeconds As Integer = (DateTime.Now - startTime).TotalSeconds
-            Util.Log("Checking status.  Elapsed time is: " + numberOfSeconds.ToString + " seconds", True, _params)
+            Util.Log("Checking status.  Elapsed time is: " + numberOfSeconds.ToString + " seconds", False, _params)
             If (0 < _params.TimeoutSeconds) AndAlso (numberOfSeconds > _params.TimeoutSeconds) Then
                 Util.Log("Timeout was set to " + _params.TimeoutSeconds.ToString + " seconds, but this export has run for " + numberOfSeconds.ToString + ".  Moving on to the next one...", False, _params)
                 Exit Sub
