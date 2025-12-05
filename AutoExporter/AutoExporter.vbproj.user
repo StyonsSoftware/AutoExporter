@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <StartArguments>/url="https://crm.clients.scripps.org/bbappfx/Appfxwebservice.asmx" /db=BBInfinity /outputfolder="C:\Users\248822.SCRIPPS\Desktop\dmf\output" /sqlinstancename=SA0243V /sqldbname=BBCRM /exportname="WPOT_Integration" /ignorecolumns="1" /timeout=6000 /statfile="stats.csv" /debug</StartArguments>
+    <StartArguments>
+    </StartArguments>
   </PropertyGroup>
 </Project>

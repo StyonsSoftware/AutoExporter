@@ -45,6 +45,8 @@ Module Main
                                 _params.ExportName = components(1)
                             Case "-IGNORECOLUMNS"
                                 _params.IgnoredColumns = components(1)
+                            Case "-OUTPUTFILENAME"
+                                _params.OutputFilename = components(1)
                         End Select
                     ElseIf 1 = components.Count Then
                         Select Case components(0)
@@ -54,6 +56,12 @@ Module Main
                     End If
                 End If
             Next
+
+            'If no file name was specified, name it after the export
+            If String.IsNullOrEmpty(_params.OutputFilename) Then
+                _params.OutputFilename = _params.ExportName
+            End If
+
             Return _params
         End If
     End Function
@@ -72,6 +80,7 @@ Module Main
         Console.WriteLine("CRMPASSWORD=**********") ' + params.CRMPassword)
         Console.WriteLine("EXPORTNAME=" + params.ExportName)
         Console.WriteLine("IGNORECOLUMNS=" + params.IgnoredColumns)
+        Console.WriteLine("OUTPUTFILENAME=" + params.OutputFilename)
     End Sub
 
     Private Sub ShowHelp()
@@ -104,7 +113,8 @@ Module Main
         Console.WriteLine("                  Column indexes are zero-based.")
         Console.WriteLine("                  If not specified, then all columns will be included.")
         Console.WriteLine("                  Example: /ignoredcolumns=""1,2,3""")
-
+        Console.WriteLine("/outputfilename   Optional.  The file name of the saved output.  If not supplied,")
+        Console.WriteLine("                  the output file will have the name of the CRM Export. ")
     End Sub
 
     Private Function ArgsValid(ByRef msg As String) As Boolean

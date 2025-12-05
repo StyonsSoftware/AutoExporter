@@ -150,7 +150,10 @@ Public Class CRMExport
     End Sub
 
     Private Function GetFileName() As String
-        Return _params.OutputFolder + IIf(_params.OutputFolder.EndsWith("\"), String.Empty, "\") + Name + ".csv"
+        If String.IsNullOrEmpty(_params.OutputFilename) Then
+            _params.OutputFilename = Name
+        End If
+        Return _params.OutputFolder + IIf(_params.OutputFolder.EndsWith("\"), String.Empty, "\") + _params.OutputFilename + ".csv"
     End Function
 
     Private Sub WriteStringToFile(s As String, filename As String)

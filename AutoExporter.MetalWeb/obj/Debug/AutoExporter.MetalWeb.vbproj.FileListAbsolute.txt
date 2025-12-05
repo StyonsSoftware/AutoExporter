@@ -12,4 +12,3 @@ C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debu
 C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\obj\Debug\AutoExporter.MetalWeb.vbproj.CopyComplete
 C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\obj\Debug\AutoExporter.MetalWeb.dll
 C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\obj\Debug\AutoExporter.MetalWeb.pdb
-C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\obj\Debug\AutoExporter.MetalWeb.vbproj.AssemblyReference.cache
