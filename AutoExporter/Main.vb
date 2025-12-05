@@ -135,12 +135,17 @@ Module Main
             ShowHelp()
         Else
             Try
-                _params = UIToParams()
+                If _params Is Nothing Then
+                    _params = UIToParams()
+                End If
+
                 If _params.Debug Then
                     ParamsToUI(_params)
                 End If
-                Dim paramsFromUser As Parameters = UIToParams()
-                Dim exports As List(Of CRMExport) = GetExportsFromCRM(paramsFromUser.ExportName)
+                Dim exports As List(Of CRMExport) = GetExportsFromCRM(_params.ExportName)
+                If exports Is Nothing OrElse exports.Count = 0 Then
+                    Console.WriteLine("No export was found with a name of '" + _params.ExportName + "'.  No action has been taken.")
+                End If
                 Dim wroteHeader As Boolean = False
                 For Each export In exports
                     If Not wroteHeader Then

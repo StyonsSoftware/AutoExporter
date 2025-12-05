@@ -1,0 +1,15 @@
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\obj\Debug\AutoExporter.MetalWeb.vbproj.CoreCompileInputs.cache
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\AutoExporter.MetalWeb.dll
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\AutoExporter.MetalWeb.pdb
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\Blackbaud.AppFx.dll
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\Blackbaud.AppFx.WebAPI.dll
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\Blackbaud.AppFx.XmlTypes.dll
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\Blackbaud.AppFx.xml
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\Blackbaud.AppFx.WebAPI.xml
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\Blackbaud.AppFx.XmlTypes.xml
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\Blackbaud.AppFx.WebAPI.XmlSerializers.dll
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\bin\Debug\Blackbaud.AppFx.XmlTypes.XmlSerializers.dll
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\obj\Debug\AutoExporter.MetalWeb.vbproj.CopyComplete
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\obj\Debug\AutoExporter.MetalWeb.dll
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\obj\Debug\AutoExporter.MetalWeb.pdb
+C:\Users\248822.SCRIPPS\Source\Repos\AutoExporter\AutoExporter.MetalWeb\obj\Debug\AutoExporter.MetalWeb.vbproj.AssemblyReference.cache

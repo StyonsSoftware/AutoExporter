@@ -1,0 +1,2773 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Blackbaud.AppFx
+</name>
+</assembly>
+<members>
+<member name="T:Blackbaud.AppFx.My.Resources.Content">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.CsvDataReader_DefaultColumnName">
+<summary>
+  Looks up a localized string similar to Column.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.CsvDataReader_ExceptionThrownByColumnN">
+<summary>
+  Looks up a localized string similar to Unable to read column &apos;{0}&apos;: {1}.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.CsvDataReader_InvalidDataInColumnN">
+<summary>
+  Looks up a localized string similar to Invalid data in column &apos;{0}&apos;: {1}.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Operator_Future">
+<summary>
+  Looks up a localized string similar to from today.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Operator_Past">
+<summary>
+  Looks up a localized string similar to ago.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Day">
+<summary>
+  Looks up a localized string similar to day.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Days">
+<summary>
+  Looks up a localized string similar to days.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_FiscalYear">
+<summary>
+  Looks up a localized string similar to fiscal year.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_FiscalYears">
+<summary>
+  Looks up a localized string similar to fiscal years.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Month">
+<summary>
+  Looks up a localized string similar to month.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Months">
+<summary>
+  Looks up a localized string similar to months.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Quarter">
+<summary>
+  Looks up a localized string similar to quarter.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Quarters">
+<summary>
+  Looks up a localized string similar to quarters.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Week">
+<summary>
+  Looks up a localized string similar to week.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Weeks">
+<summary>
+  Looks up a localized string similar to weeks.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Year">
+<summary>
+  Looks up a localized string similar to year.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Content.RollingDate_Unit_Years">
+<summary>
+  Looks up a localized string similar to years.
+</summary>
+</member>
+<member name="T:Blackbaud.AppFx.My.Resources.Errors">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.CsvDataReader_CsvFileCouldNotBeRead">
+<summary>
+  Looks up a localized string similar to CSV file could not be read.  The file may be corrupt or in an invalid format..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.CsvDataReader_DuplicateColumnHeader">
+<summary>
+  Looks up a localized string similar to A comma separated value file must contain unique column header names. The column header &apos;{0}&apos; may not exist multiple times in the file..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.CsvDataReader_ExtraColumnsCanOnlyBeAddedWithDefaultValue">
+<summary>
+  Looks up a localized string similar to Extra columns can only be added if they have a default value..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.CsvDataReader_FieldAlreadyExistsInDataReader">
+<summary>
+  Looks up a localized string similar to Field &apos;{0}&apos; already exists in the data reader..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.CsvDataReader_FieldDoesNotExistInRow">
+<summary>
+  Looks up a localized string similar to Field &apos;{0}&apos; does not exist in the current row..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.Currency_InvalidMoney">
+<summary>
+  Looks up a localized string similar to {0} was not recognized as a valid money value..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.CurrencyMath_InvalidNumberOfDigits">
+<summary>
+  Looks up a localized string similar to The currency rounding method could not round to {0} decimal digits.  Values from 0 to 3 are permitted..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.CurrencyMath_InvalidRoundingType">
+<summary>
+  Looks up a localized string similar to A valid rounding method was not provided to the currency rounding method..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.CurrencyMath_SumLengthMismatch">
+<summary>
+  Looks up a localized string similar to Currency summation requires an equal number of rates and amounts.  {0} amounts were provided with {1} exchange rates..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.FuzzyDate_InvalidDay">
+<summary>
+  Looks up a localized string similar to Day {0} is invalid for month {1}..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.FuzzyDate_InvalidFuzzyDate">
+<summary>
+  Looks up a localized string similar to {0} was not recognized as a valid FuzzyDate..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.FuzzyDate_RegionSpecificFormatNotAllowed">
+<summary>
+  Looks up a localized string similar to Region-specific formats are not allowed when parsing a FuzzyDate..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.HourMinute_InvalidHour">
+<summary>
+  Looks up a localized string similar to Hour value must be between {0} and {1}..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.HourMinute_InvalidHourMinute">
+<summary>
+  Looks up a localized string similar to {0} was not recognized as a valid HourMinute..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.HourMinute_InvalidMinute">
+<summary>
+  Looks up a localized string similar to Minute value must be between {0} and {1}..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.MonthDay_InvalidMonthDay">
+<summary>
+  Looks up a localized string similar to {0} was not recognized as a valid MonthDay..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.RollingDate_InvalidEmptyValues">
+<summary>
+  Looks up a localized string similar to A rolling date with empty values is undefined..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.RollingDate_InvalidNumber">
+<summary>
+  Looks up a localized string similar to The value you enter must be a positive number..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.RollingDate_InvalidOperator">
+<summary>
+  Looks up a localized string similar to Operator value must be between {0} and {1}..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.RollingDate_InvalidRollingDate">
+<summary>
+  Looks up a localized string similar to {0} was not recognized as a valid RollingDate..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.RollingDate_InvalidUnit">
+<summary>
+  Looks up a localized string similar to Unit value must be between {0} and {1}..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.RollingDate_NoStartDateEndDateForFiscalYears">
+<summary>
+  Looks up a localized string similar to The StartDate and EndDate properties are not supported when the Unit property is set to FiscalYears; they must be calculated in a context where access to the database server is available..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.Time_InvalidSecond">
+<summary>
+  Looks up a localized string similar to Second value must be between {0} and {1}..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.Time_InvalidTime">
+<summary>
+  Looks up a localized string similar to {0} was not recognized as a valid Time..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.WebAddress_CannotBeValidated">
+<summary>
+  Looks up a localized string similar to Value cannot be validated as a WebAddress..
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Errors.YearValue_InvalidYearValue">
+<summary>
+  Looks up a localized string similar to {0} was not recognized as a valid YearValue..
+</summary>
+</member>
+<member name="T:Blackbaud.AppFx.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Blackbaud.AppFx.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Blackbaud.AppFx.PhoneFormatCode">
+ <summary>
+ Indicates the phone formatting strings for a phone field.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Unformatted">
+<summary>Unformatted</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format1">
+<summary>(###) ###-####</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format2">
+<summary>(#####) ######</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format3">
+<summary>(###) #### ####</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format4">
+<summary>(####) ### ####</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format5">
+<summary>(##) ### ####</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format6">
+<summary>(##) #### ####</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format7">
+<summary>#### ### ###</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format8">
+<summary>#### ### ####</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format9">
+<summary>### ### ###</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format10">
+<summary>### ### ####</summary>
+</member>
+<member name="F:Blackbaud.AppFx.PhoneFormatCode.Format11">
+<summary>(#) ##-###-####</summary>
+</member>
+<member name="T:Blackbaud.AppFx.CurrencyPattern">
+ <summary>
+ This class encapsulates functionality dealing with NumberFormatInfo CurrencyPositivePattern and 
+ CurrencyNegativePattern.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.CsvDataReader.#ctor(System.IO.Stream)">
+ <summary>
+ Creates an instance of CsvDataReader with the provided file stream.  The first row of the CSV file will be treated as the header.
+ </summary>
+ <param name="stm">Stream containing the contents of the CSV file.</param>
+</member>
+<member name="M:Blackbaud.AppFx.CsvDataReader.#ctor(System.IO.Stream,System.Int32)">
+ <summary>
+ Creates an instance of CsvDataReader with the provided file stream and buffer size.  The first row of the CSV file will be treated as the header.
+ </summary>
+ <param name="stm">Stream containing the contents of the CSV file.</param>
+ <param name="bufferSize">Number of characters to read into memory at once when reading the contents of the CSV file.</param>
+</member>
+<member name="M:Blackbaud.AppFx.CsvDataReader.#ctor(System.IO.Stream,System.Boolean)">
+ <summary>
+ Creates an instance of CsvDataReader with the provided file stream.
+ </summary>
+ <param name="stm">Stream containing the contents of the CSV file.</param>
+ <param name="treatFirstRowAsHeader">Indicates whether to treat the first row of the CSV file as the header information (i.e. column names) for the data columns.</param>
+</member>
+<member name="M:Blackbaud.AppFx.CsvDataReader.#ctor(System.IO.Stream,System.Boolean,System.Boolean)">
+ <summary>
+ Creates an instance of CsvDataReader with the provided file stream.
+ </summary>
+ <param name="stm">Stream containing the contents of the CSV file.</param>
+ <param name="treatFirstRowAsHeader">Indicates whether to treat the first row of the CSV file as the header information (i.e. column names) for the data columns.</param>
+ <param name="ignoreColumnMismatch">Indicates whether to ignore mismatched columns in the file.</param>
+</member>
+<member name="M:Blackbaud.AppFx.CsvDataReader.#ctor(System.IO.Stream,System.Int32,System.Boolean)">
+ <summary>
+ Creates an instance of CsvDataReader with the provided file stream.
+ </summary>
+ <param name="stm">Stream containing the contents of the CSV file.</param>
+ <param name="bufferSize">Number of characters to read into memory at once when reading the contents of the CSV file.</param>
+ <param name="treatFirstRowAsHeader">Indicates whether to treat the first row of the CSV file as the header information (i.e. column names) for the data columns.</param>
+</member>
+<member name="M:Blackbaud.AppFx.CsvDataReader.#ctor(System.IO.Stream,System.Int32,System.Boolean,System.Boolean)">
+ <summary>
+ Creates an instance of CsvDataReader with the provided file stream.
+ </summary>
+ <param name="stm">Stream containing the contents of the CSV file.</param>
+ <param name="bufferSize">Number of characters to read into memory at once when reading the contents of the CSV file.</param>
+ <param name="treatFirstRowAsHeader">Indicates whether to treat the first row of the CSV file as the header information (i.e. column names) for the data columns.</param>
+ <param name="ignoreColumnMismatch">Indicates whether to ignore mismatched columns in the file.</param>
+</member>
+<member name="M:Blackbaud.AppFx.CsvDataReader.ColumnExists(System.String)">
+ <summary>
+ Checks if a column name already exists in this reader.
+ </summary>
+ <param name="name">The name of the column.</param>
+ <returns>True if the column already exists in the reader.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.CsvDataReader.ColumnExists(System.String,System.Int32@)">
+ <summary>
+ Checks if a column name already exists in this reader and passes back the ordinal index position of the column.
+ </summary>
+ <param name="name">The name of the column.</param>
+ <param name="index">The returned ordinal index position of the column.</param>
+ <returns>True if the column already exists in the reader, and passes back the ordinal index position.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.CsvDataReader.AddExtraColumn(System.Data.DataColumn)">
+ <summary>
+ Adds an extra column with a default value to the output of the reader.
+ </summary>
+ <param name="column">The extra column to add.  It must contain a column name and default value.</param>
+</member>
+<member name="P:Blackbaud.AppFx.CsvDataReader.ExtraColumns">
+ <summary>
+ The collection of extra columns added to this reader.
+ </summary>
+ <returns>A read-only collection of extra columns added to this reader.</returns>
+</member>
+<member name="T:Blackbaud.AppFx.CsvDataWriter">
+ <summary>
+ Writes Comma Separated Value format lines to a stream.
+ </summary>
+</member>
+<member name="T:Blackbaud.AppFx.CurrencyFormat">
+ <summary>
+ Defines a format for parsing and displaying amounts in a currency.
+ </summary>
+ <remarks>The properties of a <see cref="T:Blackbaud.AppFx.CurrencyFormat" /> can be changed. If a local copy is needed,
+ isolated from other changes to the instance, the <see cref="M:Blackbaud.AppFx.CurrencyFormat.Clone" /> can be used to
+ duplicate an instance.</remarks>
+</member>
+<member name="P:Blackbaud.AppFx.CurrencyFormat.IsoCurrencyCode">
+ <summary>
+ Gets the three-letter code for this <see cref="T:Blackbaud.AppFx.CurrencyFormat" /> as defined by ISO 4217.
+ </summary>
+ <value>The ISO 4217 code of this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</value>
+ <returns>The ISO 4217 code of this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</returns>
+</member>
+<member name="P:Blackbaud.AppFx.CurrencyFormat.DecimalDigits">
+ <summary>
+ Gets the number of digits used after the decimal for this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.
+ </summary>
+ <value>The number of digits used after the decimal when formatting and parsing amounts in this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</value>
+ <returns>The number of digits used after the decimal when formatting and parsing amounts in this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</returns>
+</member>
+<member name="P:Blackbaud.AppFx.CurrencyFormat.CurrencySymbol">
+ <summary>
+ Gets the symbol used to decorate amounts in this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.
+ </summary>
+ <value>The symbol used to decorate amounts in this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</value>
+ <returns>The symbol used to decorate amounts in this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</returns>
+</member>
+<member name="P:Blackbaud.AppFx.CurrencyFormat.FormatStyle">
+ <summary>
+ Gets the <see cref="T:Blackbaud.AppFx.CurrencyFormatStyle" /> used when formatting and parsing amounts in this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.
+ </summary>
+ <value>The <see cref="T:Blackbaud.AppFx.CurrencyFormatStyle" /> used when formatting and parsing amounts in this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</value>
+ <returns>The <see cref="T:Blackbaud.AppFx.CurrencyFormatStyle" /> used when formatting and parsing amounts in this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</returns>
+</member>
+<member name="P:Blackbaud.AppFx.CurrencyFormat.RoundingType">
+ <summary>
+ Gets the <see cref="T:Blackbaud.AppFx.CurrencyRoundingType" /> used for this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.
+ </summary>
+ <value>The <see cref="T:Blackbaud.AppFx.CurrencyRoundingType" /> used for this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</value>
+ <returns>The <see cref="T:Blackbaud.AppFx.CurrencyRoundingType" /> used for this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.#ctor">
+ <summary>
+ Initializes a new <see cref="T:Blackbaud.AppFx.CurrencyFormat" /> using the current culture settings.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.#ctor(System.String,System.Int32,System.String,Blackbaud.AppFx.CurrencyFormatStyle)">
+ <summary>
+ Initializes a new <c>CurrencyFormat</c> using a specified ISO 4217 code, number of digits after
+ the decimal, symbol, and format style.
+ </summary>
+ <param name="isoCurrencyCode">The ISO 4217 code of the new <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</param>
+ <param name="decimalDigits">The number of digits used after the decimal when formatting and parsing amounts in the new <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</param>
+ <param name="currencySymbol">The symbol used to decorate amounts in the new <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</param>
+ <param name="formatStyle">The <see cref="T:Blackbaud.AppFx.CurrencyFormatStyle" /> used when formatting and parsing amounts in the new <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</param>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.#ctor(System.String,System.Int32,System.String,Blackbaud.AppFx.CurrencyFormatStyle,Blackbaud.AppFx.CurrencyRoundingType)">
+ <summary>
+ Initializes a new <c>CurrencyFormat</c> using a specified ISO 4217 code, number of digits after
+ the decimal, symbol, and format style.
+ </summary>
+ <param name="isoCurrencyCode">The ISO 4217 code of the new <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</param>
+ <param name="decimalDigits">The number of digits used after the decimal when formatting and parsing amounts in the new <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</param>
+ <param name="currencySymbol">The symbol used to decorate amounts in the new <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</param>
+ <param name="formatStyle">The <see cref="T:Blackbaud.AppFx.CurrencyFormatStyle" /> used when formatting and parsing amounts in the new <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</param>
+ <param name="roundingType">The <see cref="T:Blackbaud.AppFx.CurrencyRoundingType" /> used for this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</param>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.Clone">
+ <summary>
+ Creates a duplicate of this <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.
+ </summary>
+ <returns>The cloned <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.ToXml">
+ <summary>
+ Crates an XML encoding of the <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.
+ </summary>
+ <returns>A string containing XML representing the <see cref="T:Blackbaud.AppFx.CurrencyFormat" />.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.CreateFromXml(System.String)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.CurrencyFormat" /> using the specified XML.
+ </summary>
+ <param name="currencyXml">XML representing currency format information.</param>
+ <returns>A new instance of a <see cref="T:Blackbaud.AppFx.CurrencyFormat" /> created from the XML.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrency(System.Nullable{System.Decimal})">
+ <summary>
+ Converts the specified <see cref="T:System.Nullable`1" /> to its equivalent string representation using the default number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks>When the <paramref name="value" /> parameter has no value, <see cref="F:System.String.Empty" /> is returned.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrency(System.Decimal)">
+ <summary>
+ Converts the specified <see cref="T:System.Decimal" /> to its equivalent string representation using the default number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrency(System.Nullable{System.Decimal},System.Globalization.NumberFormatInfo)">
+ <summary>
+ Converts the specified <see cref="T:System.Nullable`1" /> to its equivalent string representation using the default number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <param name="numberFormat">The number format to use as the basis for formatting. The current culture is used when <paramref name="numberFormat" /> is null.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks>When the <paramref name="value" /> parameter has no value, <see cref="F:System.String.Empty" /> is returned.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrency(System.Decimal,System.Globalization.NumberFormatInfo)">
+ <summary>
+ Converts the specified <see cref="T:System.Decimal" /> to its equivalent string representation using the default number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <param name="numberFormat">The number format to use as the basis for formatting. The current culture is used when <paramref name="numberFormat" /> is null.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrency(System.Nullable{System.Decimal},System.Int32)">
+ <summary>
+ Converts the specified <see cref="T:System.Nullable`1" /> to its equivalent string representation using the specified number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <param name="decimalDigits">The number of digits used after the decimal for formatting.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks>When the <paramref name="value" /> parameter has no value, <see cref="F:System.String.Empty" /> is returned.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrency(System.Decimal,System.Int32)">
+ <summary>
+ Converts the specified <see cref="T:System.Decimal" /> to its equivalent string representation using the specified number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <param name="decimalDigits">The number of digits used after the decimal for formatting.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrency(System.Nullable{System.Decimal},System.Int32,System.Globalization.NumberFormatInfo)">
+ <summary>
+ Converts the specified <see cref="T:System.Nullable`1" /> to its equivalent string representation using the specified number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <param name="decimalDigits">The number of digits used after the decimal for formatting.</param>
+ <param name="numberFormat">The number format to use as the basis for formatting. The current culture is used when <paramref name="numberFormat" /> is null.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks>When the <paramref name="value" /> parameter has no value, <see cref="F:System.String.Empty" /> is returned.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrency(System.Decimal,System.Int32,System.Globalization.NumberFormatInfo)">
+ <summary>
+ Converts the specified <see cref="T:System.Decimal" /> to its equivalent string representation using the specified number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <param name="decimalDigits">The number of digits used after the decimal for formatting.</param>
+ <param name="numberFormat">The number format to use as the basis for formatting. The current culture is used when <paramref name="numberFormat" /> is null.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrency(System.Decimal,System.Int32,System.String,System.String)">
+ <summary>
+ Converts the specified <see cref="T:System.Decimal" /> to its equivalent string representation using the specified number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <param name="decimalDigits">The number of digits used after the decimal for formatting.</param>
+ <param name="groupSeparator">The symbol to use to separate groups of digits in the integer portion of the amount.</param>
+ <param name="decimalSeparator">The symbol to use to separate the integer portion of the amount from the decimal.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.FormatMoneyWithoutCurrencyCore(System.Decimal,System.Int32,System.String,System.String,System.Globalization.NumberFormatInfo)">
+ <summary>
+ Converts the specified <see cref="T:System.Decimal" /> to its equivalent string representation using the specified number of decimal digits.
+ </summary>
+ <param name="value">The numeric value to convert.</param>
+ <param name="decimalDigits">The number of digits used after the decimal for formatting.</param>
+ <param name="groupSeparator">The symbol to use to separate groups of digits in the integer portion of the amount.</param>
+ <param name="decimalSeparator">The symbol to use to separate the integer portion of the amount from the decimal.</param>
+ <returns>A string that represents the specified value in the specified format.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyFormat.IsMonetary(System.Object,Blackbaud.AppFx.CurrencyFormat)">
+ <summary>
+ Determines whether or not the given value is a properly formatted monetary amount in the given currency.
+ </summary>
+ <param name="value">The value to be tested, as a String.</param>
+ <param name="currency">The CurrencyFormat object used to evaluate the value.</param>
+ <returns>True if the value is a formatted monetary amount in the given currency.</returns>
+</member>
+<member name="T:Blackbaud.AppFx.CurrencyRoundingType">
+ <summary>
+ Enumerates the various methods for rounding currency numbers allowed by the system.
+ </summary>
+ <remarks>These values correspond to the possible values of the ROUNDINGTYPECODE column of the Currency table in the Currency catalog.</remarks>
+</member>
+<member name="T:Blackbaud.AppFx.CurrencyMath">
+ <summary>
+ Provides various mathematical functions for handling amounts of different currencies within the Blackbaud Application Framework.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyMath.ConvertCurrency(System.Decimal,System.Decimal,System.Int32,Blackbaud.AppFx.CurrencyRoundingType)">
+ <summary>
+ Converts a money amount to a new currency.
+ </summary>
+ <param name="amount">The amount to convert.</param>
+ <param name="rate">The currency exchange rate.  Amount * Rate = New Amount.</param>
+ <param name="newDecimalDigits">The number of digits after the decimal allowed by the new currency.  Values from 0 through 3 are permitted.</param>
+ <param name="newRoundingType">The rounding method used to round values in the new currency.</param>
+ <returns>The value of the amount in the new currency.</returns>
+ <remarks>May cause overflow if both the rate and the amount are very large numbers (in the trillions or greater).</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyMath.ConvertCurrencyWithoutRounding(System.Decimal,System.Decimal)">
+ <summary>
+ Converts a money amount to a new currency without rounding the amount.  Use this function if the amount will be aggregated before use.
+ </summary>
+ <param name="amount">The amount to convert.</param>
+ <param name="rate">The currency exchange rate.  Amount * Rate = New Amount.</param>
+ <returns>A decimal containing the results of the raw conversion of Amount * Rate = New Amount.</returns>
+ <remarks>May cause overflow if both the rate and the amount are very large numbers (in the trillions or greater).</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyMath.SumCurrencies(System.Collections.Generic.IList{System.Decimal},System.Collections.Generic.IList{System.Decimal},System.Int32,Blackbaud.AppFx.CurrencyRoundingType)">
+ <summary>
+ Sums money amounts being converted to a common currency.
+ </summary>
+ <param name="amounts">The amounts to convert and sum.  Must have the same length as rates.</param>
+ <param name="rates">The currency exchange rates.  Amount * Rate = New Amount.  Must have the same length as amounts.</param>
+ <param name="newDecimalDigits">The number of digits after the decimal allowed by the new currency.  Values from 0 through 3 are permitted.</param>
+ <param name="newRoundingType">The rounding method used to round values in the new currency.</param>
+ <returns>A decimal containing the summed converted amounts.  Rounding takes place only after summation and conversion.  Results may differ from summation of rounded amounts.</returns>
+ <remarks>Summation is performed after rounding for accuracy, i.e., 10 values of 0.1 each, which would each individually round to 0, will sum to 1 using this function.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyMath.RoundCurrency(System.Decimal,System.Int32,Blackbaud.AppFx.CurrencyRoundingType)">
+ <summary>
+ Rounds a decimal to make it a valid amount in its currency.
+ </summary>
+ <param name="amount">The amount to round.</param>
+ <param name="decimalDigits">The number of digits after the decimal allowed by the currency.  Values from 0 through 3 are permitted.</param>
+ <param name="roundingType">The rounding method used to round values in the currency.</param>
+ <returns>The rounded value of the amount.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.CurrencyMath.GetConvertUpperLimit(System.Decimal,System.Int32,Blackbaud.AppFx.CurrencyRoundingType,System.Int32,System.Decimal)">
+ <summary>
+ Computes the maximum value that can be converted at the specified rate without exceeding the specified amount.
+ </summary>
+ <param name="amount">The amount to not exceed after conversion.</param>
+ <param name="decimalDigits">The number of digits after the decimal allowed by the currency of the amount. Values from 0 through 3 are permitted.</param>
+ <param name="roundingType">The rounding method used to round values in the currency of the amount.</param>
+ <param name="fromCurrencyDecimalDigits">The number of digits after the decimal allowed by the currency of value to be converted. Values from 0 through 3 are permitted.</param>
+ <param name="rate">The currency exchange rate from the currency of the value to be converted to the currency of the amount.</param>
+ <returns>The maximum value that can be converted at the specified rate without exceeding the specified amount.</returns>
+ <remarks>When <see cref="M:Blackbaud.AppFx.CurrencyMath.ConvertCurrency(System.Decimal,System.Decimal,System.Int32,Blackbaud.AppFx.CurrencyRoundingType)" /> is called with the return value, <paramref name="rate" />, <paramref name="decimalDigits" />, and <paramref name="roundingType" /> will
+ return value of ConvertCurrency will be less than or equal to <paramref name="amount" />. Calling ConvertCurrency with any greater value with the same number digits after the decimal would
+ result in ConvertCurrency returning a value greater than the <paramref name="amount" /> parameter passed to GetConvertUpperLimit.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.DataSetCompression.CompressDataSet(System.Data.DataSet)">
+ <summary>
+ Compresses a DataSet to a Byte array using System.IO.Compression.
+ </summary>
+ <param name="recDS">A System.Data.DataSet.</param>
+</member>
+<member name="M:Blackbaud.AppFx.DataSetCompression.DecompressDataSet(System.Byte[])">
+ <summary>
+ Decompresses a Byte array to a DataSet using System.IO.Compression.
+ </summary>
+ <param name="compressedDS">A Byte array containing the compressed System.Data.DataSet.</param>
+</member>
+<member name="T:Blackbaud.AppFx.FuzzyDateStyle">
+ <summary>
+ Styles in which a fuzzy date string may be formatted.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.FuzzyDateStyle.DisplayFormat">
+ <summary>
+ Short date format of the current thread's culture info
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.FuzzyDateStyle.StorageFormat">
+ <summary>
+ yyyyMMdd format
+ </summary>
+</member>
+<member name="T:Blackbaud.AppFx.FuzzyDate">
+ <summary>
+ Represents a date which can contain a year only, a year and a month only, or a year, month and day.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.FuzzyDate.Month">
+ <summary>
+ Month value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.FuzzyDate.Day">
+ <summary>
+ Day value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.FuzzyDate.Year">
+ <summary>
+ Year value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.FuzzyDate.EmptyStorageString">
+ <summary>
+ Storage string with year, month and day values of zero.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Blackbaud.AppFx.FuzzyDate.Empty">
+ <summary>
+ <see cref="T:Blackbaud.AppFx.FuzzyDate"/> with year, month and day values of zero.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.FuzzyDate.MinValue">
+ <summary>
+ Minimum storable value for a <see cref="T:Blackbaud.AppFx.FuzzyDate"/> in the database.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.FuzzyDate.MaxValue">
+ <summary>
+ Minimum storable value for a <see cref="T:Blackbaud.AppFx.FuzzyDate"/> in the database.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.FuzzyDate.CurrentDateSeparator">
+ <summary>
+ The character representing the date separator according to the application's current thread.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.FuzzyDate.AllowMonthDay">
+ <summary>
+ Indicates <see cref="T:Blackbaud.AppFx.FuzzyDate"/> can support Month/Day values.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.#ctor(System.Boolean,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.FuzzyDate"/> based on a given year, month and day with the option to bypass validation for known valid fuzzy dates.
+ This constructor is to save processing by avoiding validation of known valid values and should remain private.
+ </summary>
+ <param name="doValidate">Flag indicating whether to validate the year, month and day parameters.</param>
+ <param name="year">Year value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="month">Month value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="day">Day value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.FuzzyDate"/> based on a given year, month and day with the option to bypass validation for known valid fuzzy dates.
+ This constructor is to save processing by avoiding validation of known valid values and should remain private.
+ </summary>
+ <param name="year">Year value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="month">Month value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="day">Day value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="allowMonthDay">Flag indicating whether to month\day values are allowed.</param>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.#ctor(System.DateTime)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.FuzzyDate"/> based on a <see cref="T:System.DateTime"/> value.
+ </summary>
+ <param name="actualDate"><see cref="T:System.DateTime"/> from which to create the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.#ctor(System.Int32)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.FuzzyDate"/> based on a given year.  The <see cref="P:Blackbaud.AppFx.FuzzyDate.Month"/> and <see cref="P:Blackbaud.AppFx.FuzzyDate.Day"/> properties will have the default value 0.
+ </summary>
+ <param name="year">Year value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.#ctor(System.Int32,System.Int32)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.FuzzyDate"/> based on a given year and month.  The <see cref="P:Blackbaud.AppFx.FuzzyDate.Day"/> property will have the default value 0.
+ </summary>
+ <param name="year">Year value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="month">Month value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.#ctor(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.FuzzyDate"/> based on a given year, month and day.
+ </summary>
+ <param name="year">Year value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="month">Month value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="day">Day value of the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.Equals(System.Object)">
+ <summary>
+ Determines if a given object is equal to the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.
+ </summary>
+ <param name="obj">Object to compare.</param>
+ <returns>Flag indicating whether the provided object is equal to the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.Equals(Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Determines if a given fuzzy date is equal to the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.
+ </summary>
+ <param name="other">Fuzzy date to compare.</param>
+ <returns>Flag indicating whether the provided fuzzy date is equal to the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.Equals(Blackbaud.AppFx.FuzzyDate,Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Determines if two <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values are equal.
+ </summary>
+ <param name="fd1">The first <see cref="T:Blackbaud.AppFx.FuzzyDate"/> used in the comparison.</param>
+ <param name="fd2">The second <see cref="T:Blackbaud.AppFx.FuzzyDate"/> used in the comparison.</param>
+ <returns>Flag indicating whether the provided <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values are equal.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.GetHashCode">
+ <summary>
+ Returns the hash code for the <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.op_Equality(Blackbaud.AppFx.FuzzyDate,Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Represents the equality operator for two <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values.
+ </summary>
+ <param name="f1">First <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="f2">Second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <returns>Flag indicating whether the two <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values are equal.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.op_Inequality(Blackbaud.AppFx.FuzzyDate,Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Represents the inequality operator for two <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values.
+ </summary>
+ <param name="f1">First <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="f2">Second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <returns>Flag indicating whether the two <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values are not equal.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.op_GreaterThan(Blackbaud.AppFx.FuzzyDate,Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Represents the greater-than operator for two <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values.
+ </summary>
+ <param name="f1">First <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="f2">Second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <returns>Flag indicating whether the first <see cref="T:Blackbaud.AppFx.FuzzyDate"/> is greater than the second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.op_LessThan(Blackbaud.AppFx.FuzzyDate,Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Represents the less-than operator for two <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values.
+ </summary>
+ <param name="f1">First <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="f2">Second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <returns>Flag indicating whether the first <see cref="T:Blackbaud.AppFx.FuzzyDate"/> is less than the second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.op_GreaterThanOrEqual(Blackbaud.AppFx.FuzzyDate,Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Represents the greater-than-or-equal-to operator for two <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values.
+ </summary>
+ <param name="f1">First <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="f2">Second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <returns>Flag indicating whether the first <see cref="T:Blackbaud.AppFx.FuzzyDate"/> is greater than or equal to the second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.op_LessThanOrEqual(Blackbaud.AppFx.FuzzyDate,Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Represents the less-than-or-equal-to operator for two <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values.
+ </summary>
+ <param name="f1">First <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="f2">Second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <returns>Flag indicating whether the first <see cref="T:Blackbaud.AppFx.FuzzyDate"/> is less than or equal to the second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.Compare(Blackbaud.AppFx.FuzzyDate,Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Compares two specified <see cref="T:Blackbaud.AppFx.FuzzyDate"/> values.
+ </summary>
+ <param name="f1">The first <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <param name="f2">The second <see cref="T:Blackbaud.AppFx.FuzzyDate"/>.</param>
+ <returns>Result of the comparison.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.ToString">
+ <summary>
+ Returns a date formatted according to the current thread's culture info.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.ToString(System.String)">
+ <summary>
+ Returns a date formatted according to the specified format string.
+ </summary>
+ <param name="format">Format string. Only day, month and year formats are supported.</param>
+ <returns>Date string.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if the format parameter is null.</exception>
+ <exception cref="T:System.ArgumentException">Thrown if the format string is a region-specific format.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.RigFormat(System.Text.StringBuilder,System.String,System.String,System.String,System.String)">
+ <summary>
+ Replaces a formatted date's parts with odd characters so it can further be parsed without accidentally replacing any of the parts' characters.
+ </summary>
+ <param name="sb">String builder for the formatted date.</param>
+ <param name="dayName">Name of the date's day.</param>
+ <param name="abbreviatedDayName">Abbreviation of the date's day.</param>
+ <param name="monthName">Name of the date's month.</param>
+ <param name="abbreviatedMonthName">Abbreviation of the date's month.</param>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.RestoreFormat(System.Text.StringBuilder,System.String,System.String,System.String,System.String)">
+ <summary>
+ Replaces the odd placeholders with the formatted date's parts.
+ </summary>
+ <param name="sb">String builder for the formatted date.</param>
+ <param name="dayName">Name of the date's day.</param>
+ <param name="abbreviatedDayName">Abbreviation of the date's day.</param>
+ <param name="monthName">Name of the date's month.</param>
+ <param name="abbreviatedMonthName">Abbreviation of the date's month.</param>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.ToStorageString">
+ <summary>
+ Returns a string which can be stored according to Blackbaud's SQL Server user-defined type for fuzzy date.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.Parse(System.String)">
+ <summary>
+ Parses a fuzzy date formatted according to the current thread's culture info (represented by <see cref="F:Blackbaud.AppFx.FuzzyDateStyle.DisplayFormat"/>).
+ </summary>
+ <param name="s">Date to parse.</param>
+ <returns>Result of the parse.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if the s argument is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided value is not a valid fuzzy date.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.Parse(System.String,System.Boolean)">
+ <summary>
+ Parses a fuzzy date formatted according to the current thread's culture info (represented by <see cref="F:Blackbaud.AppFx.FuzzyDateStyle.DisplayFormat"/>).
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>
+ <returns>Result of the parse.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if the s argument is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided value is not a valid fuzzy date.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.Parse(System.String,Blackbaud.AppFx.FuzzyDateStyle)">
+ <summary>
+ Parses a fuzzy date formatted according to the specified <see cref="T:Blackbaud.AppFx.FuzzyDateStyle"/>.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="style">Format in which the fuzzy date string is provided.</param>
+ <returns>Result of the parse.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if the s argument is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided value is not a valid fuzzy date.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.Parse(System.String,Blackbaud.AppFx.FuzzyDateStyle,System.Boolean)">
+ <summary>
+ Parses a fuzzy date formatted according to the specified <see cref="T:Blackbaud.AppFx.FuzzyDateStyle"/>.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="style">Format in which the fuzzy date string is provided.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>
+ <returns>Result of the parse.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if the s argument is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided value is not a valid fuzzy date.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParse(System.String,Blackbaud.AppFx.FuzzyDate@)">
+ <summary>
+ Attempts to parse a fuzzy date formatted according to the current thread's culture info (represented by <see cref="F:Blackbaud.AppFx.FuzzyDateStyle.DisplayFormat"/>).
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="result">Result of the parse.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParse(System.String,Blackbaud.AppFx.FuzzyDate@,System.Boolean)">
+ <summary>
+ Attempts to parse a fuzzy date formatted according to the current thread's culture info (represented by <see cref="F:Blackbaud.AppFx.FuzzyDateStyle.DisplayFormat"/>).
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>
+ <param name="result">Result of the parse.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParse(System.String,Blackbaud.AppFx.FuzzyDate@,System.Boolean,System.IFormatProvider)">
+ <summary>
+ Attempts to parse a fuzzy date formatted according to the specified DateTimeFormatInfo (represented by <see cref="F:Blackbaud.AppFx.FuzzyDateStyle.DisplayFormat"/>).
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>    
+ <param name="result">Result of the parse.</param>
+ <param name="provider">An <see cref="T:System.IFormatProvider"/> that supplies culture-specific formatting information about s.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParse(System.String,Blackbaud.AppFx.FuzzyDate@,System.Boolean,System.Boolean)">
+ <summary>
+ Attempts to parse a fuzzy date formatted according to the current thread's culture info (represented by <see cref="F:Blackbaud.AppFx.FuzzyDateStyle.DisplayFormat"/>).
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>
+ <param name="useCurrentYearForMonthDay">Use current year for month day formats.</param>
+ <param name="result">Result of the parse.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParse(System.String,Blackbaud.AppFx.FuzzyDate@,System.Boolean,System.Boolean,System.IFormatProvider)">
+ <summary>
+ Attempts to parse a fuzzy date formatted according to the specified DateTimeFormatInfo (represented by <see cref="F:Blackbaud.AppFx.FuzzyDateStyle.DisplayFormat"/>).
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>
+ <param name="useCurrentYearForMonthDay">Use current year for month day formats.</param>
+ <param name="result">Result of the parse.</param>
+ <param name="provider">An <see cref="T:System.IFormatProvider"/> that supplies culture-specific formatting information about s.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParse(System.String,Blackbaud.AppFx.FuzzyDateStyle,Blackbaud.AppFx.FuzzyDate@)">
+ <summary>
+ Attempts to parse a fuzzy date formatted according to the specified <see cref="T:Blackbaud.AppFx.FuzzyDateStyle"/>.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="style">Format in which the fuzzy date is provided.</param>
+ <param name="result">Result of the parse.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParse(System.String,Blackbaud.AppFx.FuzzyDateStyle,Blackbaud.AppFx.FuzzyDate@,System.Boolean)">
+ <summary>
+ Attempts to parse a fuzzy date formatted according to the specified <see cref="T:Blackbaud.AppFx.FuzzyDateStyle"/>.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="style">Format in which the fuzzy date is provided.</param>
+ <param name="result">Result of the parse.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParse(System.String,Blackbaud.AppFx.FuzzyDateStyle,Blackbaud.AppFx.FuzzyDate@,System.Boolean,System.Boolean)">
+ <summary>
+ Attempts to parse a fuzzy date formatted according to the specified <see cref="T:Blackbaud.AppFx.FuzzyDateStyle"/>.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="style">Format in which the fuzzy date is provided.</param>
+ <param name="result">Result of the parse.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>
+ <param name="useCurrentYearForMonthDay">Use current year for month day formats.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParse(System.String,Blackbaud.AppFx.FuzzyDateStyle,Blackbaud.AppFx.FuzzyDate@,System.Boolean,System.Boolean,System.IFormatProvider)">
+ <summary>
+ Attempts to parse a fuzzy date formatted according to the specified <see cref="T:Blackbaud.AppFx.FuzzyDateStyle"/>.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="style">Format in which the fuzzy date is provided.</param>
+ <param name="result">Result of the parse.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>
+ <param name="useCurrentYearForMonthDay">Use current year for month day formats.</param>
+ <param name="provider">An <see cref="T:System.IFormatProvider"/> that supplies culture-specific formatting information about s.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.ParseExact(System.String,System.String)">
+ <summary>
+ Converts a fuzzy date string to a <see cref="T:Blackbaud.AppFx.FuzzyDate"/> according to the provided format.  Allowed formats are similar to those of the 
+ .Net <see cref="T:System.DateTime"/> structure, though region-specific formats such as "d" or "s" are not allowed.
+ </summary>
+ <param name="s">Fuzzy date string to convert.</param>
+ <param name="format">Format in which the fuzzy date is provided.</param>
+ <returns>The FuzzyDate equivalent of the fuzzy date string.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if the s or format argument is null.</exception>
+ <exception cref="T:System.ArgumentException">Thrown if the provided format is a region-specific format.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided fuzzy date string does not represent a valid FuzzyDate.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.ParseExact(System.String,System.String,System.Boolean)">
+ <summary>
+ Converts a fuzzy date string to a <see cref="T:Blackbaud.AppFx.FuzzyDate"/> according to the provided format.  Allowed formats are similar to those of the 
+ .Net <see cref="T:System.DateTime"/> structure, though region-specific formats such as "d" or "s" are not allowed.
+ </summary>
+ <param name="s">Fuzzy date string to convert.</param>
+ <param name="format">Format in which the fuzzy date is provided.</param>
+ <param name="allowMonthDay">Flag indicating whether to month\day values are allowed.</param>
+ <returns>The FuzzyDate equivalent of the fuzzy date string.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if the s or format argument is null.</exception>
+ <exception cref="T:System.ArgumentException">Thrown if the provided format is a region-specific format.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided fuzzy date string does not represent a valid FuzzyDate.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParseExact(System.String,System.String,Blackbaud.AppFx.FuzzyDate@)">
+ <summary>
+ Converts a fuzzy date string to a <see cref="T:Blackbaud.AppFx.FuzzyDate"/> according to the provided format.  Allowed formats are similar to those of the 
+ .Net <see cref="T:System.DateTime"/> structure, though region-specific formats such as "d" or "s" are not allowed.
+ </summary>
+ <param name="s">Fuzzy date string to convert.</param>
+ <param name="format">Format in which the fuzzy date is provided.</param>
+ <param name="result">The FuzzyDate equivalent of the fuzzy date string if the parse is successful.</param>
+ <returns>Flag indicating the parse was successful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.TryParseExact(System.String,System.String,Blackbaud.AppFx.FuzzyDate@,System.Boolean@)">
+ <summary>
+ Converts a fuzzy date string to a <see cref="T:Blackbaud.AppFx.FuzzyDate"/> according to the provided format.  Allowed formats are similar to those of the 
+ .Net <see cref="T:System.DateTime"/> structure, though region-specific formats such as "d" or "s" are not allowed.
+ </summary>
+ <param name="s">Fuzzy date string to convert.</param>
+ <param name="format">Format in which the fuzzy date is provided.</param>
+ <param name="result">The FuzzyDate equivalent of the fuzzy date string if the parse is successful.</param>
+ <param name="allowMonthDay">Flag indicating whether to month\day values are allowed.</param>
+ <returns>Flag indicating the parse was successful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.CompareTo(System.Object)">
+ <summary>
+ Compares a specified object to the current instance.
+ </summary>
+ <param name="obj">The object to compare.</param>
+ <returns>Result of the comparison.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDate.CompareTo(Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Compares a specified <see cref="T:Blackbaud.AppFx.FuzzyDate"/> value to the current instance.
+ </summary>
+ <param name="other">The <see cref="T:Blackbaud.AppFx.FuzzyDate"/> to compare.</param>
+ <returns>Result of the comparison.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Blackbaud.AppFx.FuzzyDateHelper.DateFormatInfo.HasBulgarianEnding">
+ <summary>
+ Some cultures have short date formats ending a sequence containing a Cyrillic small letter Ghe
+ This property flags whether the current format contains this at the end.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.FuzzyDateHelper.DateFormatInfo.HasTurkishEnding">
+ <summary>
+ Some cultures have short date formats ending a sequence containing a Cyrillic small letter Y with Acute
+ This property flags whether the current format contains this at the end.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.FuzzyDateHelper.DateFormatInfo.TrimSuffix">
+ <summary>
+ Some cultures have a separator that is similar to ". ", but ends with the separator as a suffix
+ that is trimmed.  Because of this, the separator and suffix are a different string which we need
+ to accommodate.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.FuzzyDateHelper.DateFormatInfo.Suffix">
+ <summary>
+ Stores the suffix as determined by the GetCurrentShortDateFormatInfo function
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDateHelper.FormatSqlFuzzyDateForDisplay(System.String,System.Boolean)">
+ <summary>
+ Returns a SQL fuzzy date formatted for display. 
+ </summary>
+ <param name="dateValue">A fuzzy date in the format YYYYMMDD.</param>
+ <param name="allowMonthDay">Allow month day formats.</param>
+ <returns>The fuzzy date formatted for display.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDateHelper.GetYearString(System.Int32,System.String,System.Globalization.DateTimeFormatInfo)">
+ <summary>
+ Gets the year string from the numeric year value.  Handles calendars with an offset year (ThaiBuddhistCalendar).
+ </summary>
+ <param name="year">Numeric value of the year.</param>
+ <param name="yearFormat">Year formatting to use (yy, yyyy)</param>
+ <returns>Returns the numeric year turned into the appropriate string format.</returns>
+ <remarks>This accounts for cultures who have different numeric years such as Thailand where 2011 is 2564 for them.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyDateHelper.GetYearOffsetForCurrentCulture">
+ <summary>
+ Returns the numeric offset of Year for the current culture's calendar.
+ </summary>
+ <remarks>
+ This handles the Thai calendar where all years are displayed as 543 higher than the Gregorian calendar.
+ 2011 is 2564 for them.  For that culture, 543 will be returned.
+ </remarks>
+</member>
+<member name="T:Blackbaud.AppFx.FuzzyStringMatcher">
+ <summary>
+ This class uses the Damerau-Levenshtein Distance Algorithm for 
+ fuzzy-string comparison.  The Damerau-Levenshtein Distance Algorithm identifies
+ the minimum number of simple operations (the cost) required to transform one
+ string into another.  
+ </summary>
+ <remarks>
+ See http://en.wikipedia.org/wiki/Damerau-Levenshtein_distance for a detailed 
+ explanation of the Damerau-Levenshtein Distance Algorithm.
+ </remarks>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyStringMatcher.StringsAreSimilar(System.String,System.String)">
+ <summary>
+ Indicates that two strings are similar with a matching threshhold value of 2.
+ </summary>
+ <param name="s1"></param>
+ <param name="s2"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyStringMatcher.StringsAreSimilar(System.String,System.String,System.Int32)">
+ <summary>
+ Indicates that two strings are similar to a certain degree, as specified by the matching threshhold.
+ </summary>
+ <param name="s1"></param>
+ <param name="s2"></param>
+ <param name="matchingThreshold">The lower this value is, the closer the match must be.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyStringMatcher.CalculateDLDistance(System.String,System.String)">
+ <summary>
+ Calculates the Damerau-Levenshtein distance (or the number of simple operations
+ required to transform one string into another) between two strings
+ </summary>
+ <param name="s1"></param>
+ <param name="s2"></param>
+ <returns>An Integer representing the Damerau-Levenshtein distance between the two given strings</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyStringMatcher.FindMatches(System.String,System.Collections.Generic.IEnumerable{System.String})">
+ <summary>
+ Returns all fuzzy matches in a given set of strings for a matching threshhold value of 2.
+ </summary>
+ <param name="needle"></param>
+ <param name="haystack"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyStringMatcher.FindMatches(System.String,System.Collections.Generic.IEnumerable{System.String},System.Int32)">
+ <summary>
+ Returns all fuzzy matches in a given set of strings for a given matching threshhold.
+ </summary>
+ <param name="needle"></param>
+ <param name="haystack"></param>
+ <param name="matchingThreshold">The lower this value is, the closer the match must be.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyStringMatcher.FindSortedMatches(System.String,System.Collections.Generic.IEnumerable{System.String})">
+ <summary>
+ Returns all fuzzy matches in a given set of strings for a matching threshhold value of 2,
+ sorted by the closeness of the match.
+ </summary>
+ <param name="needle"></param>
+ <param name="haystack"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.FuzzyStringMatcher.FindSortedMatches(System.String,System.Collections.Generic.IEnumerable{System.String},System.Int32)">
+ <summary>
+ Returns all fuzzy matches in a given set of strings for a given matching threshhold,
+ sorted by the closeness of the match.
+ </summary>
+ <param name="needle"></param>
+ <param name="haystack"></param>
+ <param name="matchingThreshold">The lower this value is, the closer the match must be.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Blackbaud.AppFx.HourMinute">
+ <summary>
+ Represents an hour/minute combination.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.HourMinute.EmptyStorageString">
+ <summary>
+ Storage string when the <see cref="T:Blackbaud.AppFx.HourMinute"/> has no value.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.HourMinute.Hour">
+ <summary>
+ Hour value of the <see cref="T:Blackbaud.AppFx.HourMinute"/>
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.HourMinute.Minute">
+ <summary>
+ Minute value of the <see cref="T:Blackbaud.AppFx.HourMinute"/>.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.HourMinute.MinValue">
+ <summary>
+ Minimum valid value for an <see cref="T:Blackbaud.AppFx.HourMinute"/>.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.HourMinute.MaxValue">
+ <summary>
+ Maximum valid value for an <see cref="T:Blackbaud.AppFx.HourMinute"/>.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.HourMinute.Empty">
+ <summary>
+ Represents an <see cref="T:Blackbaud.AppFx.HourMinute"/> with no value.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.#ctor(System.Int32,System.Int32)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.HourMinute"/> based on the provided hour and minute values.
+ </summary>
+ <param name="hour">Hour value.</param>
+ <param name="minute">Minute value.</param>
+ <exception cref="T:System.ArgumentOutOfRangeException">Thrown if hour is not between 0 and 23 or minute is not between 0 and 59.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.ToString">
+ <summary>
+ Converts the <see cref="T:Blackbaud.AppFx.HourMinute"/> value to the current thread's culture info for display.
+ </summary>
+ <returns>Formatted string.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.ToString(System.String)">
+ <summary>
+ Converts the <see cref="T:Blackbaud.AppFx.HourMinute"/> value to a string using the provided format.
+ </summary>
+ <param name="format">Format to which to convert the <see cref="T:Blackbaud.AppFx.HourMinute"/>.</param>
+ <returns>Formatted string.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.ToString(System.String,System.IFormatProvider)">
+ <summary>
+ Converts the <see cref="T:Blackbaud.AppFx.HourMinute"/> value to a string using the provided format.
+ </summary>
+ <param name="format">Format to which to convert the <see cref="T:Blackbaud.AppFx.HourMinute"/>.</param>
+ <param name="provider">An <see cref="T:System.IFormatProvider"/> that supplies culture-specific formatting information about format.</param>
+ <returns>Formatted string.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.ToStorageString">
+ <summary>
+ Returns a string which can be stored according to Blackbaud's SQL Server user-defined type for hour/minute.
+ </summary>
+ <returns>Formatted string.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.Equals(System.Object)">
+ <summary>
+ Determines if a given object is equal to the <see cref="T:Blackbaud.AppFx.HourMinute"/>.
+ </summary>
+ <param name="obj">Object to compare.</param>
+ <returns>Flag indicating whether the provided object is equal to the <see cref="T:Blackbaud.AppFx.HourMinute"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.Equals(Blackbaud.AppFx.HourMinute)">
+ <summary>
+ Determines if a given HourMinute is equal to the <see cref="T:Blackbaud.AppFx.HourMinute"/>.
+ </summary>
+ <param name="other">HourMinute to compare.</param>
+ <returns>Flag indicating whether the provided HourMinute is equal to the <see cref="T:Blackbaud.AppFx.HourMinute"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.Equals(Blackbaud.AppFx.HourMinute,Blackbaud.AppFx.HourMinute)">
+ <summary>
+ Determines if two <see cref="T:Blackbaud.AppFx.HourMinute"/> values are equal.
+ </summary>
+ <param name="hm1">The first <see cref="T:Blackbaud.AppFx.HourMinute"/> used in the comparison.</param>
+ <param name="hm2">The second <see cref="T:Blackbaud.AppFx.HourMinute"/> used in the comparison.</param>
+ <returns>Flag indicating whether the provided <see cref="T:Blackbaud.AppFx.HourMinute"/> values are equal.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.Compare(Blackbaud.AppFx.HourMinute,Blackbaud.AppFx.HourMinute)">
+ <summary>
+ Compares two specified <see cref="T:Blackbaud.AppFx.HourMinute"/> values.
+ </summary>
+ <param name="hm1">The first <see cref="T:Blackbaud.AppFx.HourMinute"/>.</param>
+ <param name="hm2">The second <see cref="T:Blackbaud.AppFx.HourMinute"/>.</param>
+ <returns>Result of the comparison.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.CompareTo(Blackbaud.AppFx.HourMinute)">
+ <summary>
+ Compares a specified <see cref="T:Blackbaud.AppFx.HourMinute"/> value to the current instance.
+ </summary>
+ <param name="other">The <see cref="T:Blackbaud.AppFx.HourMinute"/> to compare.</param>
+ <returns>Result of the comparison.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.CompareTo(System.Object)">
+ <summary>
+ Compares a specified object to the current instance.
+ </summary>
+ <param name="obj">The object to compare.</param>
+ <returns>Result of the comparison.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.GetHashCode">
+ <summary>
+ Returns the hash code for the <see cref="T:Blackbaud.AppFx.HourMinute"/>.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.Parse(System.String)">
+ <summary>
+ Parses an hour/minute string value.
+ </summary>
+ <param name="s">Hour/minute string value to parse.</param>
+ <returns>Result of the parse.</returns>
+	<exception cref="T:System.ArgumentNullException">Thrown if s is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if s is not a valid hour/minute.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.Parse(System.String,System.IFormatProvider)">
+ <summary>
+ Parses an hour/minute string value.
+ </summary>
+ <param name="s">Hour/minute string value to parse.</param>
+ <param name="provider">An <see cref="T:System.IFormatProvider"/> that supplies culture-specific formatting information about s.</param>
+ <returns>Result of the parse.</returns>
+	<exception cref="T:System.ArgumentNullException">Thrown if s is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if s is not a valid hour/minute.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.TryParse(System.String,Blackbaud.AppFx.HourMinute@)">
+ <summary>
+ Attempts to parse an hour/minute string value.
+ </summary>
+ <param name="s">Hour/minute string value to parse.</param>
+ <param name="result">Result of the parse.</param>
+ <returns>Flag indicating whether the parse was successful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.HourMinute.TryParse(System.String,System.IFormatProvider,Blackbaud.AppFx.HourMinute@)">
+ <summary>
+ Attempts to parse an hour/minute string value.
+ </summary>
+ <param name="s">Hour/minute string value to parse.</param>
+ <param name="provider">An <see cref="T:System.IFormatProvider"/> that supplies culture-specific formatting information about s.</param>
+ <param name="result">Result of the parse.</param>
+ <returns>Flag indicating whether the parse was successful.</returns>
+</member>
+<member name="T:Blackbaud.AppFx.MonthDayStyle">
+ <summary>
+ Styles in which a month/day string may be formatted.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.MonthDayStyle.DisplayFormat">
+ <summary>
+ Month and day portion of the short date format of the current thread's culture info.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.MonthDayStyle.StorageFormat">
+ <summary>
+ MMdd format.
+ </summary>
+</member>
+<member name="T:Blackbaud.AppFx.MonthDay">
+ <summary>
+ Represents a month/day combination.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.MonthDay.EmptyStorageString">
+ <summary>
+ Storage string with month and day values of zero.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.MonthDay.Empty">
+ <summary>
+ <see cref="T:Blackbaud.AppFx.MonthDay"/> with month and day values of zero.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.MonthDay.Month">
+ <summary>
+ Month value of the <see cref="T:Blackbaud.AppFx.MonthDay"/>.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.MonthDay.Day">
+ <summary>
+ Day value of the <see cref="T:Blackbaud.AppFx.MonthDay"/>.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.#ctor(System.Int32,System.Int32)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.MonthDay"/> based on a given month and day.
+ </summary>
+ <param name="month">Month value of the <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <param name="day">Day value of the <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <exception cref="T:System.ArgumentOutOfRangeException">Thrown if the provided month or day is not valid.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.Equals(System.Object)">
+ <summary>
+ Determines if a given object is equal to the <see cref="T:Blackbaud.AppFx.MonthDay"/>.
+ </summary>
+ <param name="obj">Object to compare.</param>
+ <returns>Flag indicating whether the provided object is equal to the <see cref="T:Blackbaud.AppFx.MonthDay"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.Equals(Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Determines if a given MonthDay is equal to the <see cref="T:Blackbaud.AppFx.MonthDay"/>.
+ </summary>
+ <param name="other">MonthDay to compare.</param>
+ <returns>Flag indicating whether the provided MonthDay is equal to the <see cref="T:Blackbaud.AppFx.MonthDay"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.Equals(Blackbaud.AppFx.MonthDay,Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Determines if two <see cref="T:Blackbaud.AppFx.MonthDay"/> values are equal.
+ </summary>
+ <param name="md1">The first <see cref="T:Blackbaud.AppFx.MonthDay"/> used in the comparison.</param>
+ <param name="md2">The second <see cref="T:Blackbaud.AppFx.MonthDay"/> used in the comparison.</param>
+ <returns>Flag indicating whether the provided <see cref="T:Blackbaud.AppFx.MonthDay"/> values are equal.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.GetHashCode">
+ <summary>
+ Returns the hash code for the <see cref="T:Blackbaud.AppFx.MonthDay"/>.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.op_Equality(Blackbaud.AppFx.MonthDay,Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Represents the equality operator for two <see cref="T:Blackbaud.AppFx.MonthDay"/> values.
+ </summary>
+ <param name="md1">First <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <param name="md2">Second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <returns>Flag indicating whether the two <see cref="T:Blackbaud.AppFx.MonthDay"/> values are equal.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.op_Inequality(Blackbaud.AppFx.MonthDay,Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Represents the inequality operator for two <see cref="T:Blackbaud.AppFx.MonthDay"/> values.
+ </summary>
+ <param name="md1">First <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <param name="md2">Second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <returns>Flag indicating whether the two <see cref="T:Blackbaud.AppFx.MonthDay"/> values are not equal.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.op_GreaterThan(Blackbaud.AppFx.MonthDay,Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Represents the greater-than operator for two <see cref="T:Blackbaud.AppFx.MonthDay"/> values.
+ </summary>
+ <param name="md1">First <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <param name="md2">Second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <returns>Flag indicating whether the first <see cref="T:Blackbaud.AppFx.MonthDay"/> is greater than the second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.op_LessThan(Blackbaud.AppFx.MonthDay,Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Represents the less-than operator for two <see cref="T:Blackbaud.AppFx.MonthDay"/> values.
+ </summary>
+ <param name="md1">First <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <param name="md2">Second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <returns>Flag indicating whether the first <see cref="T:Blackbaud.AppFx.MonthDay"/> is less than the second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.op_GreaterThanOrEqual(Blackbaud.AppFx.MonthDay,Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Represents the greater-than-or-equal-to operator for two <see cref="T:Blackbaud.AppFx.MonthDay"/> values.
+ </summary>
+ <param name="md1">First <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <param name="md2">Second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <returns>Flag indicating whether the first <see cref="T:Blackbaud.AppFx.MonthDay"/> is greater than or equal to the second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.op_LessThanOrEqual(Blackbaud.AppFx.MonthDay,Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Represents the less-than-or-equal-to operator for two <see cref="T:Blackbaud.AppFx.MonthDay"/> values.
+ </summary>
+ <param name="md1">First <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <param name="md2">Second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <returns>Flag indicating whether the first <see cref="T:Blackbaud.AppFx.MonthDay"/> is less than or equal to the second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.Compare(Blackbaud.AppFx.MonthDay,Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Compares two specified <see cref="T:Blackbaud.AppFx.MonthDay"/> values.
+ </summary>
+ <param name="md1">The first <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <param name="md2">The second <see cref="T:Blackbaud.AppFx.MonthDay"/>.</param>
+ <returns>Result of the comparison.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.ToString">
+ <summary>
+ Returns a month/day string formatted according to the current thread's culture info.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.RigFormat(System.Text.StringBuilder,System.String,System.String,System.String,System.String)">
+ <summary>
+ Replaces a formatted date's parts with odd characters so it can further be parsed without accidentally replacing any of the parts' characters.
+ </summary>
+ <param name="sb">String builder for the formatted date.</param>
+ <param name="dayName">Name of the date's day.</param>
+ <param name="abbreviatedDayName">Abbreviation of the date's day.</param>
+ <param name="monthName">Name of the date's month.</param>
+ <param name="abbreviatedMonthName">Abbreviation of the date's month.</param>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.RestoreFormat(System.Text.StringBuilder,System.String,System.String,System.String,System.String)">
+ <summary>
+ Replaces the odd placeholders with the formatted date's parts.
+ </summary>
+ <param name="sb">String builder for the formatted date.</param>
+ <param name="dayName">Name of the date's day.</param>
+ <param name="abbreviatedDayName">Abbreviation of the date's day.</param>
+ <param name="monthName">Name of the date's month.</param>
+ <param name="abbreviatedMonthName">Abbreviation of the date's month.</param>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.ToStorageString">
+ <summary>
+ Returns a string which can be stored according to Blackbaud's SQL Server user-defined type for month/day.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.Parse(System.String,Blackbaud.AppFx.MonthDayStyle)">
+ <summary>
+ Parses a month/day string according to the specified style.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="style">Format in which the month/day is provided.</param>
+ <returns>Result of the parse.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if s is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided value is not a valid month/day string.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.Parse(System.String)">
+ <summary>
+ Parses a month/day string formatted according to the current thread's culture info.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <returns>Result of the parse.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if s is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided value is not a valid month/day string.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.ParseExact(System.String,System.String)">
+ <summary>
+ Parses a month/day string formatted according to the current thread's culture info.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="format">Format in which the month/day is provided.</param>
+ <returns>Result of the parse.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if s is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided value is not a valid month/day string.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.TryParse(System.String,Blackbaud.AppFx.MonthDay@)">
+ <summary>
+ Attempts to parse a month/day string formatted according to the current thread's culture info.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="result">Result of the parse.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.TryParse(System.String,Blackbaud.AppFx.MonthDay@,System.IFormatProvider)">
+ <summary>
+ Attempts to parse a month/day string formatted according to the specified DateTimeFormatInfo.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="result">Result of the parse.</param>
+ <param name="provider">An <see cref="T:System.IFormatProvider"/> that supplies culture-specific formatting information about s.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.TryParse(System.String,Blackbaud.AppFx.MonthDayStyle,Blackbaud.AppFx.MonthDay@)">
+ <summary>
+ Attempts to parse a month/day string formatted according to the current thread's culture info.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="style">Format in which the month/day is provided.</param>
+ <param name="result">Result of the parse.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.TryParse(System.String,Blackbaud.AppFx.MonthDayStyle,Blackbaud.AppFx.MonthDay@,System.IFormatProvider)">
+ <summary>
+ Attempts to parse a month/day string formatted according to the specified DateTimeFormatInfo.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="style">Format in which the month/day is provided.</param>
+ <param name="result">Result of the parse.</param>
+ <param name="provider">An <see cref="T:System.IFormatProvider"/> that supplies culture-specific formatting information about s.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.TryParseExact(System.String,System.String,Blackbaud.AppFx.MonthDay@)">
+ <summary>
+ Attempts to parse a month/day string formatted according to the current thread's culture info.
+ </summary>
+ <param name="s">Date to parse.</param>
+ <param name="format">Format in which the month/day is provided.</param>
+ <param name="result">Result of the parse.</param>
+ <returns>Flag indicating whether the parse was sucessful.</returns>
+</member>
+<member name="P:Blackbaud.AppFx.MonthDay.MonthDayPattern">
+ <summary>
+ The format used for displaying MonthDay as a string.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.CompareTo(System.Object)">
+ <summary>
+ Compares a specified object to the current instance.
+ </summary>
+ <param name="obj">The object to compare.</param>
+ <returns>Result of the comparison.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.MonthDay.CompareTo(Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Compares a specified <see cref="T:Blackbaud.AppFx.MonthDay"/> value to the current instance.
+ </summary>
+ <param name="other">The <see cref="T:Blackbaud.AppFx.MonthDay"/> to compare.</param>
+ <returns>Result of the comparison.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.PhoneFormatHelper.FormatPhoneNumber(System.String)">
+ <summary>
+ Format the given phone number
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.PhoneFormatHelper.FormatPhoneNumber(System.String,Blackbaud.AppFx.PhoneFormatCode)">
+ <summary>
+ Format the given phone number using the given format code.
+ </summary>
+</member>
+<member name="T:Blackbaud.AppFx.RollingDate">
+ <summary>
+ Represents a rolling date, such as "3 years ago".
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.RollingDate.EmptyStorageString">
+ <summary>
+ Storage string when the <see cref="T:Blackbaud.AppFx.RollingDate" /> has no value.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.RollingDate.MinValue">
+ <summary>
+ Minimum valid value for an <see cref="T:Blackbaud.AppFx.RollingDate" />.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.RollingDate.MaxValue">
+ <summary>
+ Maximum valid value for an <see cref="T:Blackbaud.AppFx.RollingDate" />.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.RollingDate.Empty">
+ <summary>
+ Represents an <see cref="T:Blackbaud.AppFx.RollingDate" /> with no value.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.#ctor(System.Boolean)">
+ <summary>
+ Create a new <see cref="T:Blackbaud.AppFx.RollingDate" /> object with no value.
+ </summary>
+ <param name="hasValue">Must be false. A rolling date with empty values is undefined.</param>
+ <exception cref="T:System.ArgumentException">Thrown when hasValue is true.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.Parse(System.String)">
+ <summary>
+ Parses a rolling date string value.
+ </summary>
+ <param name="s">Rolling date string value to parse.</param>
+ <returns>Result of the parse.</returns>
+	<exception cref="T:System.ArgumentNullException">Thrown if s is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if s is not a valid rolling date.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.TryParse(System.String,Blackbaud.AppFx.RollingDate@)">
+ <summary>
+ Expects a string with the format "Number;Unit;Operator"
+ See <see cref="M:Blackbaud.AppFx.RollingDate.ToStorageString" />.
+ </summary>
+ <example>
+ This sample shows how to call the <see cref="M:Blackbaud.AppFx.RollingDate.TryParse(System.String,Blackbaud.AppFx.RollingDate@)" /> method.
+ <code>
+ Dim rd as RollingDate = Nothing
+ If TryParse("3;2;1", rd) Then
+     Console.WriteLine(rd.ToString) ' outputs "3 months from today"
+ End If
+ 
+ If TryParse("3 months from today") Then
+     Console.WriteLine("String parsed!") ' does not print because this string cannot be parsed
+ Else
+     Console.WriteLine("String was not parsed!")
+ End If
+ </code>
+ </example>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.ToStorageString">
+ <summary>
+ Returns a string which can be stored according to Blackbaud's SQL Server user-defined type for fuzzy date.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.TranslateMultiple(Blackbaud.AppFx.RollingDate.UnitType)">
+ <summary>
+ Provides a string representation of a <see cref="T:Blackbaud.AppFx.RollingDate.UnitType" /> with 0 or more than 1 units.
+ </summary>
+ <param name="unit">The <see cref="T:Blackbaud.AppFx.RollingDate.UnitType" /> to be translated.</param>
+ <returns>A string representation of the <see cref="T:Blackbaud.AppFx.RollingDate.UnitType" /> provided.</returns>
+ <example>
+ <code>
+ Public Sub DoSomething()
+     Dim rd1 As New RollingDate(1, RollingDate.UnitType.Days, RollingDate.OperatorType.Past)
+     Dim rd2 As New RollingDate(2, RollingDate.UnitType.Days, RollingDate.OperatorType.Future)
+ 
+     Console.WriteLine(GetUnitString(rd1)) ' prints "day"
+     Console.WriteLine(GetUnitString(rd2)) ' prints "days"
+ End Sub
+ 
+ Private Shared Function GetUnitString(ByVal rd As RollingDate) As String
+     If rd.Number = 1 Then
+         Return RollingDate.TranslateSingle(rd.Unit)
+     Else
+         Return RollingDate.TranslateMultiple(rd.Unit)
+     End If
+ End Function
+ </code>
+ </example>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.TranslateSingle(Blackbaud.AppFx.RollingDate.UnitType)">
+ <summary>
+ Provides a string representation of a <see cref="T:Blackbaud.AppFx.RollingDate.UnitType" /> with a single unit.
+ </summary>
+ <param name="unit">The <see cref="T:Blackbaud.AppFx.RollingDate.UnitType" /> to be translated.</param>
+ <returns>A string representation of the <see cref="T:Blackbaud.AppFx.RollingDate.UnitType" /> provided.</returns>
+ <example>
+ <code>
+ Public Sub DoSomething()
+     Dim rd1 As New RollingDate(1, RollingDate.UnitType.Days, RollingDate.OperatorType.Past)
+     Dim rd2 As New RollingDate(2, RollingDate.UnitType.Days, RollingDate.OperatorType.Future)
+ 
+     Console.WriteLine(GetUnitString(rd1)) ' prints "day"
+     Console.WriteLine(GetUnitString(rd2)) ' prints "days"
+ End Sub
+ 
+ Private Shared Function GetUnitString(ByVal rd As RollingDate) As String
+     If rd.Number = 1 Then
+         Return RollingDate.TranslateSingle(rd.Unit)
+     Else
+         Return RollingDate.TranslateMultiple(rd.Unit)
+     End If
+ End Function
+ </code>
+ </example>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.Translate(Blackbaud.AppFx.RollingDate.OperatorType)">
+ <summary>
+ Provides a string representation of a <see cref="T:Blackbaud.AppFx.RollingDate.OperatorType" />.
+ </summary>
+ <param name="operator">The <see cref="T:Blackbaud.AppFx.RollingDate.OperatorType" /> to be translated.</param>
+ <returns>A string representation of the <see cref="T:Blackbaud.AppFx.RollingDate.OperatorType" /> provided.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.Equals(System.Object)">
+ <summary>
+ Determines if a given object is equal to the <see cref="T:Blackbaud.AppFx.RollingDate" />.
+ </summary>
+ <param name="obj">Object to compare.</param>
+ <returns>Flag indicating whether the provided object is equal to the <see cref="T:Blackbaud.AppFx.RollingDate" />.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.Equals(Blackbaud.AppFx.RollingDate)">
+ <summary>
+ Determines if a given rolling date is equal to the <see cref="T:Blackbaud.AppFx.RollingDate" />.
+ </summary>
+ <param name="other">Rolling date to compare.</param>
+ <returns>Flag indicating whether the provided rolling date is equal to the <see cref="T:Blackbaud.AppFx.RollingDate" />.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.Equals(Blackbaud.AppFx.RollingDate,Blackbaud.AppFx.RollingDate)">
+ <summary>
+ Determines if two <see cref="T:Blackbaud.AppFx.RollingDate"/> values are equal.
+ </summary>
+ <param name="rd1">The first <see cref="T:Blackbaud.AppFx.RollingDate"/> used in the comparison.</param>
+ <param name="rd2">The second <see cref="T:Blackbaud.AppFx.RollingDate"/> used in the comparison.</param>
+ <returns>Flag indicating whether the provided <see cref="T:Blackbaud.AppFx.RollingDate"/> values are equal.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.GetHashCode">
+ <summary>
+ Returns the hash code for the <see cref="T:Blackbaud.AppFx.RollingDate" />.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.RollingDate.StartDate(System.DateTime)">
+ <summary>
+ Returns the start date of the specified interval, as of a given date.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <returns>The start date of the interval, as of the given date.</returns>
+ <remarks>The date passed in would typically be the date the data warehouse was last refreshed.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.GetStartDateForMonths(System.DateTime,System.Int32)">
+ <summary>
+ Moves the number of months from the date, then returns the first day of that month.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <param name="number">The number of months to use for the calculation; direction is inferred from the sign.</param>
+ <returns>The first day of the month calculated.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.GetStartDateForQuarters(System.DateTime,System.Int32)">
+ <summary>
+ Moves the number of calendar quarters from the date, then returns the first day of that quarter.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <param name="number">The number of calendar quarters to use for the calculation; direction is inferred from the sign.</param>
+ <returns>The first day of the calendar quarter calculated.</returns>
+ <remarks>Calendar quarters are January through March, April through June, July through September, and October through December.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.GetStartDateForWeeks(System.DateTime,System.Int32)">
+ <summary>
+ Moves the number of weeks from the date, then returns the date of the Sunday of that week.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <param name="number">The number of weeks to use for the calculation; direction is inferred from the sign.</param>
+ <returns>The date of the Sunday of the week calculated.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.GetStartDateForYears(System.DateTime,System.Int32)">
+ <summary>
+ Moves the number of years from the date, then returns the first day of that year.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <param name="number">The number of years to use for the calculation; direction is inferred from the sign.</param>
+ <returns>The first day of the year calculated.</returns>
+</member>
+<member name="P:Blackbaud.AppFx.RollingDate.EndDate(System.DateTime)">
+ <summary>
+ Returns the start date of the specified interval, as of a given date.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <returns>The end date of the interval, as of the given date.</returns>
+ <remarks>The date passed in would typically be the date the data warehouse was last refreshed.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.GetEndDateForMonths(System.DateTime,System.Int32)">
+ <summary>
+ Moves the number of months from the date, then returns the last day of that month.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <param name="number">The number of months to use for the calculation; direction is inferred from the sign.</param>
+ <returns>The last day of the month calculated.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.GetEndDateForQuarters(System.DateTime,System.Int32)">
+ <summary>
+ Moves the number of calendar quarters from the date, then returns the last day of that quarter.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <param name="number">The number of calendar quarters to use for the calculation; direction is inferred from the sign.</param>
+ <returns>The last day of the calendar quarter calculated.</returns>
+ <remarks>Calendar quarters are January through March, April through June, July through September, and October through December.</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.GetEndDateForWeeks(System.DateTime,System.Int32)">
+ <summary>
+ Moves the number of weeks from the date, then returns the date of the Saturday of that week.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <param name="number">The number of weeks to use for the calculation; direction is inferred from the sign.</param>
+ <returns>The date of the Saturday of the week calculated.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.RollingDate.GetEndDateForYears(System.DateTime,System.Int32)">
+ <summary>
+ Moves the number of years from the date, then returns the last day of that year.
+ </summary>
+ <param name="asOf">The date to use for the calculation.</param>
+ <param name="number">The number of years to use for the calculation; direction is inferred from the sign.</param>
+ <returns>The last day of the year calculated.</returns>
+</member>
+<member name="T:Blackbaud.AppFx.ValueValidator">
+ <summary>
+ Provides various methods for validating values for use within the Blackbaud Application Framework.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidBoolean(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid boolean value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <remarks>Valid values include "True", "False" (both of which are not case-sensitive, "0", and "1."</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidBoolean(System.String)">
+ <summary>
+ Indicates whether a given value is a valid boolean value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns></returns>
+ <remarks>Valid values include "True", "False" (both of which are not case-sensitive, "0", and "1."</remarks>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidByte(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid byte value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidByte(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid byte value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidByte(System.String)">
+ <summary>
+ Indicates whether a given value is a valid byte value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidByte(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid byte value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidByteWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid byte value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidByteWithResult(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid byte value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidByteWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid byte value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidByteWithResult(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid byte value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidByteWithResult(System.Byte,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid byte value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateTimeOffset(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid datetimeoffset value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateTimeOffset(System.Object,System.DateTime,System.DateTime)">
+ <summary>
+ Indicates whether a given value is a valid datetimeoffset value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateTimeOffset(System.Object,System.DateTimeOffset,System.DateTimeOffset)">
+ <summary>
+ Indicates whether a given value is a valid datetimeoffset value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateTimeOffset(System.String)">
+ <summary>
+ Indicates whether a given value is a valid datetimeoffset value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateTimeOffsetWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid datetimeoffset value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateTimeOffsetWithResult(System.Object,System.DateTimeOffset,System.DateTimeOffset)">
+ <summary>
+ Indicates whether a given value is a valid datetimeoffset value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateTimeOffsetWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid datetimeoffset value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateTimeOffsetWithResult(System.String,System.DateTimeOffset,System.DateTimeOffset)">
+ <summary>
+ Indicates whether a given value is a valid datetimeoffset value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateTimeOffsetWithResult(System.DateTimeOffset,System.DateTimeOffset,System.DateTimeOffset)">
+ <summary>
+ Indicates whether a given value is a valid datetimeoffset value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minvalue">The minimum valid value.</param>
+ <param name="maxvalue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDate(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid date value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDate(System.Object,System.DateTime,System.DateTime)">
+ <summary>
+ Indicates whether a given value is a valid date value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDate(System.String)">
+ <summary>
+ Indicates whether a given value is a valid date value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDate(System.String,System.DateTime,System.DateTime)">
+ <summary>
+ Indicates whether a given value is a valid date value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid date value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateWithResult(System.Object,System.DateTime,System.DateTime)">
+ <summary>
+ Indicates whether a given value is a valid date value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid date value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateWithResult(System.String,System.DateTime,System.DateTime)">
+ <summary>
+ Indicates whether a given value is a valid date value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDateWithResult(System.DateTime,System.DateTime,System.DateTime)">
+ <summary>
+ Indicates whether a given value is a valid date value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDecimal(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid decimal value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDecimal(System.String)">
+ <summary>
+ Indicates whether a given value is a valid decimal value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDecimal(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid decimal value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDecimal(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid decimal value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDecimalWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid decimal value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDecimalWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid decimal value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDecimalWithResult(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid decimal value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidDecimalWithResult(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid decimal value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidEmailAddress(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid e-mail address.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidEmailAddressWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid e-mail address.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidEmailAddress(System.String)">
+ <summary>
+ Indicates whether a given value is a valid e-mail address.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidEmailAddressWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid e-mail address.
+ </summary>
+ <param name="value">String to validate.</param>
+ <returns>Result detailing the reasons the string is or is not a valid e-mail address.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidFuzzyDate(Blackbaud.AppFx.FuzzyDate)">
+ <summary>
+ Indicates whether a given value is a valid fuzzy date.
+ </summary>
+ <param name="value">FuzzyDate to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidFuzzyDate(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid fuzzy date.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidFuzzyDate(System.String)">
+ <summary>
+ Indicates whether a given value is a valid fuzzy date.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidFuzzyDateWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid fuzzy date.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidFuzzyDateWithResult(System.Object,System.Boolean)">
+ <summary>
+ Indicates whether a given value is a valid fuzzy date.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="allowMonthDay">Month/Day is allowed.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidFuzzyDateWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid fuzzy date.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidFuzzyDateWithResult(System.String,System.Boolean)">
+ <summary>
+ Indicates whether a given value is a valid fuzzy date.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="allowMonthDay">Month/Day is allowed.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidGuid(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid GUID.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidGuid(System.String)">
+ <summary>
+ Indicates whether a given value is a valid GUID.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidHourMinute(Blackbaud.AppFx.HourMinute)">
+ <summary>
+ Indicates whether a given value is a valid hour/minute value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Always returns true, since the HourMinute data type can never be in an invalid state.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidHourMinute(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid hour/minute value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidHourMinute(System.String)">
+ <summary>
+ Indicates whether a given value is a valid hour/minute value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidTime(System.TimeSpan)">
+ <summary>
+ Indicates whether a given value is a valid time value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Returns true if the TimeSpan value is also a valid time of day (0:00:00 to 23:59:59).</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidTime(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid time value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidTime(System.String)">
+ <summary>
+ Indicates whether a given value is a valid time value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidInteger(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid integer value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidInteger(System.String)">
+ <summary>
+ Indicates whether a given value is a valid integer value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidIntegerWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid integer value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidIntegerWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid integer value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidIntegerWithResult(System.Object,System.Int32,System.Int32)">
+ <summary>
+ Indicates whether a given value is a valid integer value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidIntegerWithResult(System.String,System.Int32,System.Int32)">
+ <summary>
+ Indicates whether a given value is a valid integer value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidIntegerWithResult(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Indicates whether a given value is a valid integer value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidLong(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid long value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidLong(System.String)">
+ <summary>
+ Indicates whether a given value is a valid long value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidLong(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid long value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidLong(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid long value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidLongWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid long value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidLongWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid long value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidLongWithResult(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid long value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidLongWithResult(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid long value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidLongWithResult(System.Int64,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid long value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoney(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoney(System.String)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoney(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoney(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoneyWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoneyWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoneyWithResult(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoney(System.Object,Blackbaud.AppFx.CurrencyFormat)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="currency">Currency formatting of the value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoney(System.String,Blackbaud.AppFx.CurrencyFormat)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="currency">Currency formatting of the value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoney(System.Object,System.Decimal,System.Decimal,Blackbaud.AppFx.CurrencyFormat)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <param name="currency">Currency formatting of the value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoney(System.String,System.Decimal,System.Decimal,Blackbaud.AppFx.CurrencyFormat)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <param name="currency">Currency formatting of the value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoneyWithResult(System.Object,Blackbaud.AppFx.CurrencyFormat)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="currency">Currency formatting of the value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoneyWithResult(System.String,Blackbaud.AppFx.CurrencyFormat)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="currency">Currency formatting of the value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoneyWithResult(System.Object,System.Decimal,System.Decimal,Blackbaud.AppFx.CurrencyFormat)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <param name="currency">Currency formatting of the value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMoneyWithResult(System.String,System.Decimal,System.Decimal,Blackbaud.AppFx.CurrencyFormat)">
+ <summary>
+ Indicates whether a given value is a valid money value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <param name="currency">Currency formatting of the value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMonthDay(Blackbaud.AppFx.MonthDay)">
+ <summary>
+ Indicates whether a given value is a valid month/day value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMonthDay(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid month/day value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMonthDay(System.String)">
+ <summary>
+ Indicates whether a given value is a valid month/day value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMonthDayWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid month/day value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidMonthDayWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid month/day value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidShort(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid short value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidShort(System.String)">
+ <summary>
+ Indicates whether a given value is a valid short value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidShort(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid short value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidShort(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid short value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidShortWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid short value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidShortWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid short value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidShortWithResult(System.Object,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid short value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidShortWithResult(System.String,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid short value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidShortWithResult(System.Int16,System.Decimal,System.Decimal)">
+ <summary>
+ Indicates whether a given value is a valid short value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="minValue">The minimum valid value.</param>
+ <param name="maxValue">The maximum valid value.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidString(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid string value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidString(System.String)">
+ <summary>
+ Indicates whether a given value is a valid string value.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidString(System.Object,System.Int32)">
+ <summary>
+ Indicates whether a given value is a valid string value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="maxLength">Maximum length allowed for the string.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidString(System.String,System.Int32)">
+ <summary>
+ Indicates whether a given value is a valid string value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="maxLength">Maximum length allowed for the string.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidStringWithResult(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid string value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidStringWithResult(System.String)">
+ <summary>
+ Indicates whether a given value is a valid string value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidStringWithResult(System.Object,System.Int32)">
+ <summary>
+ Indicates whether a given value is a valid string value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="maxLength">Maximum length allowed for the string.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidStringWithResult(System.String,System.Int32)">
+ <summary>
+ Indicates whether a given value is a valid string value.
+ </summary>
+ <param name="value">Value to validate.</param>
+ <param name="maxLength">Maximum length allowed for the string.</param>
+ <returns>Result detailing the reasons the value is or is not valid.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidWebAddress(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid web address.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidWebAddress(System.String)">
+ <summary>
+ Indicates whether a given value is a valid web address.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.ValidateWebAddress(System.Object)">
+ <summary>
+ Returns a valid web address for the value passed in.
+ </summary>
+ <param name="value"></param>
+ <returns>Value to validate.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.ValidateWebAddress(System.String)">
+ <summary>
+ Returns a valid web address for the value passed in.
+ </summary>
+ <param name="value"></param>
+ <returns>Value to validate.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidXml(System.Object)">
+ <summary>
+ Indicates whether a given value is a valid XML document.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="M:Blackbaud.AppFx.ValueValidator.IsValidXml(System.String)">
+ <summary>
+ Indicates whether a given value is a valid XML document.
+ </summary>
+ <param name="value">Value to validate.</param>
+</member>
+<member name="T:Blackbaud.AppFx.YearValue">
+ <summary>
+ Represents a year value within the constraints of the Blackbaud Application Framework.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.YearValue.MaxValue">
+ <summary>
+ Maximum valid value for a <see cref="T:Blackbaud.AppFx.YearValue"/>.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.YearValue.MinValue">
+ <summary>
+ Minimum valid value for a <see cref="T:Blackbaud.AppFx.YearValue"/>.
+ </summary>
+</member>
+<member name="F:Blackbaud.AppFx.YearValue.Empty">
+ <summary>
+ <see cref="T:Blackbaud.AppFx.YearValue"/> with a value of zero.
+ </summary>
+</member>
+<member name="P:Blackbaud.AppFx.YearValue.Value">
+ <summary>
+ <see cref="T:System.Int32"/> value of the <see cref="T:Blackbaud.AppFx.YearValue"/>.
+ </summary>
+</member>
+<member name="M:Blackbaud.AppFx.YearValue.#ctor(System.Int32)">
+ <summary>
+ Creates a new <see cref="T:Blackbaud.AppFx.YearValue"/> based on a given year.
+ </summary>
+ <param name="year">Integer value of the year.</param>
+ <exception cref="T:System.ArgumentOutOfRangeException">Thrown if the year value is not within the minimum and maximum allowed values.</exception>
+</member>
+<member name="M:Blackbaud.AppFx.YearValue.Equals(Blackbaud.AppFx.YearValue,Blackbaud.AppFx.YearValue)">
+ <summary>
+ Determines if two <see cref="T:Blackbaud.AppFx.YearValue"/> values are equal.
+ </summary>
+ <param name="year1">The first <see cref="T:Blackbaud.AppFx.YearValue"/> used in the comparison.</param>
+ <param name="year2">The second <see cref="T:Blackbaud.AppFx.YearValue"/> used in the comparison.</param>
+ <returns>Flag indicating whether the provided <see cref="T:Blackbaud.AppFx.YearValue"/> values are equal.</returns>
+</member>
+<member name="M:Blackbaud.AppFx.YearValue.Parse(System.String)">
+ <summary>
+ Parses a 2-, 3- or 4-digit year string.
+ </summary>
+ <param name="s">Year string to parse.</param>
+ <returns>Result of the parse.</returns>
+ <exception cref="T:System.ArgumentNullException">Thrown if s is null.</exception>
+ <exception cref="T:System.FormatException">Thrown if the provided value is not a valid year string.</exception>
+</member>
+</members>
+</doc>

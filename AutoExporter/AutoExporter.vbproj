@@ -53,21 +53,17 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Blackbaud.AppFx.Platform.Catalog.WebApiClient, Version=2.93.2034.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\dev\sdks\293\SDK\DLLReferences\Blackbaud.AppFx.Platform.Catalog.WebApiClient.dll</HintPath>
+    <Reference Include="Blackbaud.AppFx.Platform.Catalog.WebApiClient">
+      <HintPath>..\..\..\..\..\..\Program Files\Blackbaud\SDK\DLLReferences\Blackbaud.AppFx.Platform.Catalog.WebApiClient.dll</HintPath>
     </Reference>
-    <Reference Include="Blackbaud.AppFx.Server, Version=2.93.2034.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\dev\sdks\293\SDK\DLLReferences\Blackbaud.AppFx.Server.dll</HintPath>
+    <Reference Include="Blackbaud.AppFx.Server">
+      <HintPath>..\..\..\..\..\..\Program Files\Blackbaud\SDK\DLLReferences\Blackbaud.AppFx.Server.dll</HintPath>
     </Reference>
-    <Reference Include="Blackbaud.AppFx.WebAPI, Version=2.93.2034.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\dev\sdks\293\SDK\DLLReferences\Blackbaud.AppFx.WebAPI.dll</HintPath>
+    <Reference Include="Blackbaud.AppFx.WebAPI">
+      <HintPath>..\..\..\..\..\..\Program Files\Blackbaud\SDK\DLLReferences\Blackbaud.AppFx.WebAPI.dll</HintPath>
     </Reference>
-    <Reference Include="Blackbaud.AppFx.XmlTypes, Version=2.93.2034.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\dev\sdks\293\SDK\DLLReferences\Blackbaud.AppFx.XmlTypes.dll</HintPath>
+    <Reference Include="Blackbaud.AppFx.XmlTypes">
+      <HintPath>..\..\..\..\..\..\Program Files\Blackbaud\SDK\DLLReferences\Blackbaud.AppFx.XmlTypes.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
